@@ -1,0 +1,238 @@
+/**
+* @file 
+* @date 2022-08-25
+* @author 
+* @lastModify  2022-08-25
+*/
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+/** Import all the reference constant after this line */
+@use '@datareachable/webpack/Constant/breakPoint.scss' as *;
+@use '@datareachable/webpack/Constant/font.scss' as *;
+@use '@datareachable/webpack/Constant/color.scss' as *;
+
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+/** The demo mixin is ..........*/
+@mixin demo {}
+
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+/* <--------------------------- * SECTION1 * --------------------------- */
+.jobDetail_container {
+    @include body_2();
+    width: 100%;
+    height: 100%;
+    padding: 2.4rem 3.2rem;
+    color: $neutral_400;
+
+    .jobDetail_header {
+        display: flex;
+        justify-content: space-between;
+
+        .goJobPage_button {
+            @include c_h_6();
+            width: 13.7rem;
+            height: 4rem !important;
+            color: #fff;
+
+            .goJobPage {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0.8rem 1.2rem;
+            }
+        }
+    }
+
+    .prevPage_icon {
+        height: 1.6rem;
+        margin-top: 0.4rem;
+        transform: rotate(180deg);
+        color: $neutral_500;
+        cursor: pointer;
+    }
+
+    .editDesc {
+        height: 1.2rem;
+        color: $primary_600;
+        cursor: pointer;
+
+        &:hover {
+            color: $primary_400;
+        }
+    }
+
+    .job_name {
+        @include c_subtitle_5();
+        color: $neutral_600;
+    }
+
+    .job_creator,
+    .job_createTime,
+    .job_org {
+        display: flex;
+        align-items: center;
+        margin: 0.8rem 0;
+    }
+
+    .job_creator,
+    .job_org {
+        >div {
+            display: flex;
+            align-items: center;
+
+            .avatar_container {
+                margin-right: 0.4rem;
+            }
+        }
+    }
+
+    .job_describe {
+        display: flex;
+        align-items: center;
+        margin-top: 3.2rem;
+        margin-bottom: 1.2rem;
+
+        h2 {
+            margin-right: 1.6rem;
+        }
+    }
+
+    .job_dataSource {
+        margin-top: 3.2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    h2 {
+        @include c_body_1();
+        color: $neutral_600;
+    }
+
+    h3 {
+        @include c_body_3();
+        margin-right: 1.6rem;
+        color: $neutral_500;
+    }
+}
+
+.jobDetail_alert {
+    .alert_body {
+        overflow: hidden;
+    }
+
+    .alert_container {
+        padding: 0;
+
+        >svg {
+            display: none;
+        }
+    }
+}
+
+/* <--------------------------- * SECTION1 * --------------------------- */
+
+/* <--------------------------- * SECTION2 * --------------------------- */
+.jobDesc {
+    height: 100%;
+    background-color: $white;
+
+    >h2 {
+        @include c_h_4();
+        margin-top: 2.4rem;
+        margin-bottom: 0.4rem;
+        color: $neutral_700;
+    }
+
+    p {
+        @include c_body_1();
+        color: $neutral_300;
+        margin-bottom: 1.6rem;
+    }
+
+    .textarea_wrap {
+        width: 53.6rem;
+        height: 22rem;
+        padding: 1rem;
+        border: 0.1rem solid $neutral_200;
+        border-radius: 1rem;
+        background-color: $bg;
+
+        &:hover {
+            border-color: $primary_400;
+        }
+
+        &:focus-within {
+            border-color: $primary_600;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100%;
+            @include body_1;
+            color: $neutral_500;
+            border: none;
+            resize: none;
+            outline: none;
+            background-color: transparent;
+        }
+
+        .editor_wrap {
+            height: 100%;
+            overflow: hidden;
+            overflow-y: auto;
+        }
+    }
+
+    .editConditions_editor {
+        height: 100%;
+        border: none;
+
+        .textEditor_wrapper {
+            width: 100% !important;
+            height: 100% !important;
+            padding: 0;
+            padding-right: 1rem;
+        }
+    }
+
+    .createJobs_createButton {
+        margin-top: 3.2rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.jobDesc_textEdit {
+    height: 8rem;
+    pointer-events: none;
+    overflow: hidden;
+
+    .textEditor_wrap {
+        background-color: transparent;
+        border: none;
+        height: 100%;
+    }
+
+    .textEditor_wrapper {
+        width: 100% !important;
+        height: 100% !important;
+        padding: 0;
+        overflow: hidden;
+    }
+}
+
+.textEditTool_wrap {
+    z-index: 100 !important;
+}
+
+.jobInfo_wrap {
+    display: flex;
+    align-items: center;
+    transform: translate(0);
+    transition: 0.3s all ease;
+
+    >div {
+        flex-shrink: 0;
+    }
+}
+
+/* <--------------------------- * SECTION2 * --------------------------- */

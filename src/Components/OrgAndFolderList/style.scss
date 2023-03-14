@@ -1,0 +1,286 @@
+/**
+* @file Org And FolderList
+* @date 2021-12-24
+* @author Zhou Chengzhi
+* @lastModify Zhou Chengzhi 2021-12-24
+*/
+
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+
+/** Import all the reference constant after this line */
+
+@import '~/Constant/breakPoint.scss';
+@import '~/Constant/font.scss';
+@import '~/Constant/color.scss';
+
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+
+.orgAndFolderList {
+    width: 26.6rem;
+    border-radius: 1.2rem;
+    background: $background;
+    border: 0.1rem solid $neutral_200;
+    min-width: 22rem;
+    // max-width: 32.6rem;
+    overflow: hidden;
+    margin: 0 auto;
+    // height: calc(100% - 2rem);
+    // transform: height 1s;
+}
+
+/* <------------------------------------ **** org area START **** ------------------------------------ */
+
+.orgAndFolderList_orgArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-bottom: 0.1rem solid $neutral_100;
+    background: $background;
+}
+
+.orgAndFolderList_selectOrg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 5.8rem;
+    border-bottom: 0.1rem solid $neutral_100;
+    padding: 1.6rem 0;
+    padding-left: 1.9rem;
+    padding-right: 1.2rem;
+    cursor: pointer;
+    background: $background;
+    .orgAndFolderList_selectOrgLogo {
+        flex: 0 0 auto;
+    }
+    .orgAndFolderList_selectOrgLogoName {
+        width: 17rem;
+        margin: 0 0.8rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font: $fs_m_14;
+        height: 2.4rem;
+        line-height: 2.4rem;
+        letter-spacing: 0.01rem;
+        color: $neutral_600;
+        user-select: none;
+    }
+    .orgAndFolderList_selectOrgLogoIcon {
+        width: 1.6rem;
+        height: 1.6rem;
+        font-size: 1.6rem;
+        cursor: pointer;
+        transform: rotate(-90deg);
+        transition: transform 0.5s;
+        &__active {
+            transform: rotate(0deg);
+        }
+    }
+}
+
+.orgAndFolderList_orgList.orgAndFolderList_orgList__active {
+    height: 18rem;
+}
+
+.orgAndFolderList_orgList {
+    width: 100%;
+    // height: 0rem;
+    overflow: hidden;
+    transition: height 0.5s;
+    background: $background;
+    background-color: $primary_10;
+    .scroll_scrollContainer {
+        height: unset !important;
+    }
+    .orgAndFolderList_orgListItem {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 2.5rem;
+        padding-left: 1.9rem;
+        padding-right: 1.2rem;
+        margin: 1.6rem 0;
+        cursor: pointer;
+        &:hover {
+            .orgAndFolderList_orgListItemName {
+                color: $primary_400;
+            }
+            .orgAndFolderList_prefer {
+                display: flex;
+            }
+            .orgAndFolderList_personal {
+                display: none;
+            }
+        }
+        .orgAndFolderList_orgListItemLogo {
+            margin-right: 0.8rem;
+            flex: 0 0 auto;
+        }
+        .orgAndFolderList_orgListItemName {
+            font: $fs_r_14;
+            // line-height: 1.5rem;
+            color: $neutral_400;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            user-select: none;
+            transition: color 0.3s;
+            flex: 1;
+        }
+        .orgAndFolderList_personal,
+        .orgAndFolderList_preferred {
+            height: 1.45rem;
+            text-align: center;
+            background-color: $primary_50;
+            color: $primary_600;
+            border-radius: 1.5rem;
+            padding: 0 0.4rem;
+            @include label;
+        }
+        .orgAndFolderList_preferred {
+            background-color: $auxiliary_100;
+            color: $auxiliary_600;
+        }
+        .orgAndFolderList_prefer {
+            background-color: $white;
+            box-shadow: 0rem 0.2rem 0.8rem rgba(26, 26, 26, 0.08),
+                0rem 0.2rem 0.4rem rgba(26, 26, 26, 0.03);
+            border-radius: 0.4rem;
+            height: 2rem;
+            padding: 0 0.8rem;
+            @include label;
+            color: $auxiliary_600;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s;
+            &:hover {
+                background-color: $auxiliary_100;
+            }
+        }
+        .orgAndFolderList_prefer {
+            display: none;
+        }
+    }
+    .orgAndFolderList_orgListManage {
+        margin: 0 1.2rem 0 2rem;
+        height: 4.1rem;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        user-select: none;
+        border-top: 0.1rem solid $neutral_100;
+        > svg {
+            margin-right: 0.8rem;
+            width: 1.6rem;
+            height: 1.6rem;
+            font-size: 1.6rem;
+            color: $display_font;
+        }
+        > span {
+            font: $fs_r_14;
+            // line-height: 1.5rem;
+            color: $display_font;
+            margin-left: 0.3rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}
+
+/* <------------------------------------ **** org area END **** ------------------------------------ */
+
+/* <------------------------------------ **** folder area START **** ------------------------------------ */
+
+.orgAndFolderList_folderArea {
+    position: relative;
+    background: $background;
+    width: 100%;
+    overflow: hidden;
+    > span {
+        width: 0.8rem;
+        height: 3rem;
+        position: absolute;
+        top: 2.4rem;
+        left: -0.4rem;
+        background-color: $primary_600;
+        border-radius: 0.4rem;
+        transition: all 0.2s;
+    }
+    .orgAndFolderList_folderItem {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 3rem;
+        margin: 2.4rem 0;
+        padding-left: 1.9rem;
+        cursor: pointer;
+        user-select: none;
+        width: 100%;
+        &:hover .orgAndFolderList_folderItemIcon,
+        &:hover .orgAndFolderList_folderItemName,
+        &:hover .orgAndFolderList_folderItemCount {
+            color: $primary_400;
+        }
+    }
+    .orgAndFolderList_folderItem:nth-child(3) .orgAndFolderList_folderItemIcon {
+        // font-size: 1.5rem !important;
+        width: 1.8rem;
+        height: 1.5rem;
+    }
+    .orgAndFolderList_folderItemLeft {
+        display: flex;
+        align-items: center;
+        .orgAndFolderList_folderItemIcon {
+            margin-right: 1.6rem;
+            // font-size: 1.8rem;
+            width: 1.8rem;
+            height: 1.8rem;
+            color: $neutral_400;
+        }
+        .orgAndFolderList_folderItemName {
+            max-width: calc(100% - 3rem);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            height: 2rem;
+            font: $fs_r_14;
+            color: $neutral_400;
+            line-height: 2rem;
+            letter-spacing: 0.025rem;
+        }
+    }
+    .orgAndFolderList_folderItemCount {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2rem;
+        height: 2rem;
+        justify-self: flex-end;
+        margin-right: 1.2rem;
+        padding: 0.5rem 0.6rem;
+        font: $fs_r_14;
+        line-height: 1.5rem;
+        border-radius: 0.4rem;
+        color: $neutral_400;
+        transition: all 0.3s;
+    }
+    .orgAndFolderList_folderItem_active {
+        .orgAndFolderList_folderItemLeft svg,
+        .orgAndFolderList_folderItemName,
+        .orgAndFolderList_folderItemCount {
+            color: $primary_600;
+        }
+        .orgAndFolderList_folderItemCount {
+            background-color: $primary_50;
+        }
+    }
+}
+
+/* <------------------------------------ **** folder area END **** ------------------------------------ */

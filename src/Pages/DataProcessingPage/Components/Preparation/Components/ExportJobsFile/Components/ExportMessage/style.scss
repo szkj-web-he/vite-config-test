@@ -1,0 +1,72 @@
+/**
+* @file 
+* @date 2022-12-08
+* @author liaoli
+* @lastModify liaoli 2022-12-08
+*/
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+/** Import all the reference constant after this line */
+@use '@datareachable/webpack/Constant/breakPoint.scss' as *;
+@use '@datareachable/webpack/Constant/font.scss' as *;
+@use '@datareachable/webpack/Constant/color.scss' as *;
+
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+/** The demo mixin is ..........*/
+@mixin demo {}
+
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+/* <--------------------------- * SECTION1 * --------------------------- */
+@keyframes progress-bar-stripes {
+    0% {
+        background-position-x: 0
+    }
+
+    100% {
+        background-position-x: 100%
+    }
+}
+
+.exportMessage_progress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem 0;
+
+    >div {
+        width: 18.6rem;
+        height: 1.4rem;
+        border: 0.1rem solid $primary_600;
+        border-radius: 10rem;
+        background-color: $primary_600;
+        background-image: linear-gradient(-45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+        background-size: 4rem 4rem;
+        animation: progress-bar-stripes 2s linear infinite;
+    }
+
+    p {
+        @include c_body_3();
+        color: $primary_600;
+        margin-top: 1.2rem;
+    }
+}
+
+.exportMessage_success {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $primary_600;
+    padding: 2rem;
+
+    .icon_wrap {
+        margin-right: 1.1rem;
+        font-size: 2.4rem;
+    }
+
+    div {
+        @include c_body_3();
+    }
+}
+
+/* <--------------------------- * SECTION1 * --------------------------- */

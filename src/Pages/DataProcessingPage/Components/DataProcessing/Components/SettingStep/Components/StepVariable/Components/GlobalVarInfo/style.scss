@@ -1,0 +1,99 @@
+/**
+* @file
+* @date 2022-11-15
+* @author liaoli
+* @lastModify liaoli 2022-11-15
+*/
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+/** Import all the reference constant after this line */
+@use '@datareachable/webpack/Constant/breakPoint.scss' as *;
+@use '@datareachable/webpack/Constant/font.scss' as *;
+@use '@datareachable/webpack/Constant/color.scss' as *;
+
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+/** The demo mixin is ..........*/
+@mixin demo {}
+
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+/* <--------------------------- * SECTION1 * --------------------------- */
+.globalVarInfo_title {
+    @include c_h_6();
+    color: $neutral_700;
+}
+
+.globalVarInfo_row {
+    margin-top: 2rem;
+}
+
+.globalVarInfo_rowTitle {
+    @include c_h_7();
+    margin-bottom: 0.8rem;
+    color: $neutral_600;
+}
+
+.globalVarInfo_nameInput {
+    width: 100% !important;
+    height: 3rem !important;
+}
+
+.globalVarInfo_desc {
+    height: 10rem !important;
+}
+
+.globalVarInfo_empty {
+    text-align: center;
+
+    img {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    p {
+        @include c_body_3();
+        color: $neutral_400;
+    }
+}
+
+.globalVarInfo_scriptItem {
+    display: flex;
+    align-items: center;
+    color: $neutral_400;
+    margin-bottom: 0.8rem;
+
+    .icon_wrap {
+        font-size: 1.5rem;
+    }
+
+    p {
+        @include body_2();
+        margin-left: 1.1rem;
+        margin-right: 0.8rem;
+    }
+
+    span {
+        @include c_label_1();
+        width: 5.3rem;
+        height: 2rem;
+        text-align: center;
+        border: 0.1rem solid $neutral_300;
+        background-color: $neutral_100;
+        border-radius: 2.4rem;
+    }
+
+}
+
+.globalVarInfo_nameRepeat{
+    position: relative;
+    border-color: $danger_600 !important;
+
+    &::after {
+        position: absolute;
+        content: "变量名称重复或格式不正确";
+        bottom: -1.5rem;
+        left: 0;
+        color: $danger_600;
+    }
+}
+
+/* <--------------------------- * SECTION1 * --------------------------- */

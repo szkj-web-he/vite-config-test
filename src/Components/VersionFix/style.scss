@@ -1,0 +1,81 @@
+/**
+* @file 
+* @date 2021-12-09
+* @author zhoubin 
+* @lastModify zhoubin  2021-12-09
+*/
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+/** Import all the reference constant after this line */
+@import "~/Constant/breakPoint.scss";
+@import "~/Constant/font.scss";
+@import "~/Constant/color.scss";
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+/** The demo mixin is ..........*/
+@mixin demo {
+}
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+/* <--------------------------- * SECTION1 * --------------------------- */
+.version_none {
+    // z-index: -99;
+    // opacity: 0;
+    // visibility: hidden;
+    pointer-events: none;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 0.8rem;
+    line-height: 1.4rem;
+    font-size: 1rem;
+    transform: scale(0.9);
+    color: $neutral_300;
+    border: 0.1rem solid $neutral_200;
+    border-radius: 1.4rem;
+    margin-right: 1.3rem;
+    svg {
+        position: absolute;
+        top: 0;
+        right: -0.5rem;
+        transform: translateY(-50%);
+        font-size: 1.2rem;
+        color: $primary_variant;
+        cursor: pointer;
+    }
+}
+.version_list {
+    height: 2rem;
+    overflow: hidden;
+    // text-overflow: ellipsis;
+    // display: -webkit-box;
+    // -webkit-line-clamp: 1;
+    // -webkit-box-orient: vertical;
+}
+.version_key {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 0.8rem;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    transform: scale(0.9);
+    color: $neutral_300;
+    border: 0.1rem solid $neutral_200;
+    border-radius: 1.4rem;
+    margin-right: 1.3rem;
+    svg {
+        position: absolute;
+        top: 0;
+        right: -0.5rem;
+        transform: translateY(-50%);
+        font-size: 1.2rem;
+        color: $primary_variant;
+        cursor: pointer;
+    }
+}
+.version_omit {
+    display: inline-block;
+    width: 1.2rem;
+    font: $fs_r_14;
+    color: $neutral_300;
+}
+/* <--------------------------- * SECTION1 * --------------------------- */

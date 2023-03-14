@@ -1,0 +1,57 @@
+/**
+* @file
+* @date 2022-11-15
+* @author liaoli
+* @lastModify liaoli 2022-11-15
+*/
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+/** Import all the reference constant after this line */
+@use '@datareachable/webpack/Constant/breakPoint.scss' as *;
+@use '@datareachable/webpack/Constant/font.scss' as *;
+@use '@datareachable/webpack/Constant/color.scss' as *;
+
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+/** The demo mixin is ..........*/
+@mixin demo {}
+
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+/* <--------------------------- * SECTION1 * --------------------------- */
+.stepVar_empty{
+
+    h2{
+        @include c_h_6();
+        color: $neutral_700;
+        margin-bottom: 3.2rem;
+    }
+
+    >div{
+        @include c_body_3();
+        text-align: center;
+
+        img{
+            width: 8rem;
+            height: 8rem;
+        }
+
+        p{
+            color: $neutral_300;
+        }
+        >div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $primary_600;
+            margin-top: 0.4rem;
+
+            .icon_wrap{
+                font-size: 1.4rem;
+                margin-right: 0.5rem;
+            }
+            &:hover{
+                color: $primary_400;
+            }
+        }
+    }
+}
+/* <--------------------------- * SECTION1 * --------------------------- */

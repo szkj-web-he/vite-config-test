@@ -1,0 +1,191 @@
+/**
+* @file
+* @date 2022-09-06
+* @author liaoli
+* @lastModify liaoli 2022-09-06
+*/
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+/** Import all the reference constant after this line */
+@use '@datareachable/webpack/Constant/breakPoint.scss' as *;
+@use '@datareachable/webpack/Constant/font.scss' as *;
+@use '@datareachable/webpack/Constant/color.scss' as *;
+
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+/** The demo mixin is ..........*/
+@mixin demo {
+}
+
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+/* <--------------------------- * SECTION1 * --------------------------- */
+.question_item {
+    margin-bottom: 5.6rem;
+}
+
+.questionOption_popover {
+    .popover_body {
+        @include c_label_1();
+        max-width: 45.8rem;
+        width: max-content;
+        height: unset;
+        padding: 0.4rem 1.2rem;
+        color: #fff;
+    }
+}
+
+.question_option {
+    display: inline-block;
+    margin-bottom: 1.6rem;
+
+    .multiDropDown_input {
+        @include c_body_3();
+        max-width: 42rem;
+        min-width: 21.9rem;
+        height: 3rem;
+        padding: 0.5rem 1.2rem 0.5rem 3.2rem !important;
+        border-radius: 0.4rem;
+        color: $neutral_600;
+    }
+
+    .multiDropDown_drop {
+        left: 0.9rem;
+    }
+}
+
+.question_title {
+    margin-bottom: 2rem;
+
+    > p {
+        font: 500 1.4rem/2rem $CNCommonFamily;
+        letter-spacing: 0.02rem;
+        color: $neutral_600;
+    }
+
+    > div {
+        display: flex;
+        align-items: center;
+    }
+
+    .question_changeChartType {
+        justify-content: center;
+        width: 6rem;
+        height: 2.8rem;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $neutral_50;
+            border-radius: 0.4rem;
+        }
+
+        .columnChart_icon {
+            width: 1.4rem;
+            height: 1.4rem;
+            color: $primary_600;
+        }
+
+        .changeChart_icon {
+            width: 1rem;
+            margin-left: 1rem;
+            color: $neutral_400;
+            transform: rotate(90deg);
+            transition: 0.2s all linear;
+        }
+    }
+}
+
+.question_charts {
+    padding: 2rem;
+    border: 0.1rem solid transparent;
+    border-radius: 1.2rem;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.04);
+
+    .chart_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+        color: $neutral_400;
+
+        > p {
+            @include label();
+        }
+
+        .chart_Icon {
+            opacity: 0;
+            display: flex;
+            align-items: center;
+            transition: 0.2s opacity linear;
+
+            .chart_settingIcon,
+            .chart_exportIcon {
+                box-sizing: content-box;
+                width: 1.6rem;
+                height: 1.6rem;
+                padding: 0.4rem;
+                border-radius: 0.6rem;
+                box-shadow: $shadow_small;
+                cursor: pointer;
+
+                &:hover {
+                    color: $primary_600;
+                }
+            }
+
+            .chart_exportIcon {
+                margin-left: 1.6rem;
+            }
+        }
+    }
+
+    &:hover .chart_Icon {
+        opacity: 1;
+    }
+
+    &:hover {
+        border: 0.1rem solid $primary_400;
+    }
+}
+
+.question_optionSelect {
+    .multiDropDown_selectListItem {
+        @include c_body_3();
+        color: $neutral_600;
+    }
+
+    .multiDropDown_selectList {
+        max-width: 37.6rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+.changeChart_loopContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.9rem;
+    .question_option {
+        margin-bottom: 0;
+    }
+    &_left {
+        display: flex;
+        align-items: center;
+    }
+    &_leftTitle {
+        @include c_h_7();
+    }
+    .dropDownListsV2_wrap {
+        margin-left: 1.2rem;
+    }
+}
+/* <--------------------------- * SECTION1 * --------------------------- */
+
+.chartIcon_popover {
+    .popover_body {
+        @include c_body_3();
+        padding: 0.8rem 1.2rem;
+        color: #fff;
+        width: max-content;
+        height: 3.6rem;
+    }
+}

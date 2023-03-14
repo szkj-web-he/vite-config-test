@@ -1,0 +1,78 @@
+/**
+* @file 
+* @date 2022-08-26
+* @author liaoli
+* @lastModify liaoli 2022-08-26
+*/
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+/** Import all the reference constant after this line */
+@use '@datareachable/webpack/Constant/breakPoint.scss' as *;
+@use '@datareachable/webpack/Constant/font.scss' as *;
+@use '@datareachable/webpack/Constant/color.scss' as *;
+
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+/** The demo mixin is ..........*/
+@mixin demo {}
+
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+/* <--------------------------- * SECTION1 * --------------------------- */
+
+.exportFile_box {
+    >h2 {
+        @include c_h_4();
+        color: $neutral_700;
+    }
+
+    .exportFile_tips {
+        @include c_body_1();
+        margin-top: 0.4rem;
+        margin-bottom: 2.4rem;
+        color: $neutral_300;
+    }
+
+    .exportFile_button {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 4.8rem;
+    }
+}
+
+.exportFile_format {
+    >h3 {
+        @include c_body_1;
+        margin-bottom: 0.3rem;
+        color: $neutral_600;
+    }
+
+    .exportFile_formaRadio {
+        height: 2rem;
+        margin-bottom: 0.4rem;
+    }
+}
+
+.exportFile_type {
+    height: 11rem;
+
+    >h2 {
+        @include c_h-6();
+        color: $neutral_500;
+    }
+
+    p {
+        @include c_body_3();
+        color: $neutral_400;
+    }
+}
+
+.exportFile_typeName {
+    @include c_h_6();
+}
+
+.archiveJob_alert {
+    .alert_container {
+        padding: 2.4rem;
+    }
+}
+
+/* <--------------------------- * SECTION1 * --------------------------- */

@@ -1,0 +1,74 @@
+/**
+* @file 
+* @date 2021-12-09
+* @author zhoubin 
+* @lastModify zhoubin  2021-12-09
+*/
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+/** Import all the reference constant after this line */
+@import "~/Constant/breakPoint.scss";
+@import "~/Constant/font.scss";
+@import "~/Constant/color.scss";
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+/** The demo mixin is ..........*/
+@mixin demo {
+}
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+/* <--------------------------- * SECTION1 * --------------------------- */
+.keywords_none {
+    pointer-events: none;
+    padding: 0 0.4rem;
+    @include overline;
+    transform: scale(0.9);
+    color: $primary_600;
+    background-color: $primary_50;
+    border-radius: 1.5rem;
+    margin-right: 0.8rem;
+    svg {
+        position: absolute;
+        top: 0;
+        right: -0.5rem;
+        transform: translateY(-50%);
+        font-size: 1.2rem;
+        color: $primary_variant;
+        cursor: pointer;
+    }
+}
+.keywords_list {
+    width: calc(100% - 10rem);
+    // max-width: 60rem;
+    white-space: nowrap;
+    padding-bottom: 0.5rem;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+}
+.keywords_length {
+    width: auto;
+}
+.keywords_key {
+    position: relative;
+    padding: 0 0.4rem;
+    @include overline;
+    transform: scale(0.9);
+    color: $primary_600;
+    background-color: $primary_50;
+    border-radius: 1.5rem;
+    margin-right: 0.8rem;
+    svg {
+        position: absolute;
+        top: 0;
+        right: -0.5rem;
+        transform: translateY(-50%);
+        font-size: 1.2rem;
+        color: $primary_variant;
+        cursor: pointer;
+    }
+}
+.keywords_omit {
+    width: 1.2rem;
+    padding: 0;
+    font: $fs_r_14;
+    color: $gray_1;
+}
+/* <--------------------------- * SECTION1 * --------------------------- */

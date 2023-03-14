@@ -1,0 +1,67 @@
+/**
+* @file 
+* @date 2021-11-10
+* @author zhoubin 
+* @lastModify zhoubin  2021-11-10
+*/
+
+
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+
+
+/** Import all the reference constant after this line */
+
+@import "~/Constant/breakPoint.scss";
+@import "~/Constant/font.scss";
+@import "~/Constant/color.scss";
+
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+
+
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+
+
+/** The demo mixin is ..........*/
+
+@mixin demo {}
+
+
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+
+
+/* <--------------------------- * SECTION1 * --------------------------- */
+
+.openList_container {
+    width: 13rem;
+    height: 100%;
+    box-shadow: $shadow_small;
+    border-radius: 0.6rem;
+    @include body_2;
+    color: $neutral_500;
+    background: $white;
+    padding: 0.8rem 0.4rem;
+    li {
+        padding: 0 0.8rem;
+        height: 2.8rem;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.8rem;
+        border-radius: 0.6rem;
+        &:hover {
+            background-color: $primary_50;
+            cursor: pointer;
+        }
+        &:last-child {
+            margin-bottom: unset;
+        }
+    }
+    .openList_line {
+        height: 0.1rem;
+        margin-top: 1.2rem;
+        margin-bottom: 0.3rem;
+        background: $not_activated;
+    }
+}
+
+
+/* <--------------------------- * SECTION1 * --------------------------- */

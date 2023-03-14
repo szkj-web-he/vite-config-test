@@ -1,0 +1,90 @@
+/**
+* @file
+* @date 2022-11-17
+* @author liaoli
+* @lastModify liaoli 2022-11-17
+*/
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+/** Import all the reference constant after this line */
+@use '@datareachable/webpack/Constant/breakPoint.scss' as *;
+@use '@datareachable/webpack/Constant/font.scss' as *;
+@use '@datareachable/webpack/Constant/color.scss' as *;
+
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+/** The demo mixin is ..........*/
+@mixin demo {}
+
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+/* <--------------------------- * SECTION1 * --------------------------- */
+.delVariable_header {
+    display: flex;
+    align-items: center;
+
+    .icon_wrap {
+        font-size: 2.2rem;
+        color: $danger_600;
+    }
+
+    h2 {
+        @include c_h_5();
+        margin-left: 0.8rem;
+        color: $neutral_700;
+    }
+}
+
+.delVariable_tips {
+    @include c_body_3();
+    margin-top: 0.8rem;
+    margin-bottom: 2.4rem;
+    color: $neutral_400;
+
+    span {
+        color: $neutral_300;
+    }
+}
+
+.delVariable_content {
+    padding: 0 3.2rem;
+}
+
+.delVariable_varWrap {
+    height: 15.4rem;
+    padding: 2rem 2.4rem;
+    background-color: $bg;
+    border: 0.1rem solid $neutral_200;
+    border-radius: 0.6rem;
+
+}
+
+.delVariable_title {
+    @include c_h_6();
+    color: $neutral_500;
+}
+
+.delVariable_varItem {
+    @include c_body_3();
+    display: flex;
+    align-items: center;
+    margin-top: 0.9rem;
+    color: $neutral_400;
+
+    .icon_wrap {
+        margin-right: 1rem;
+    }
+}
+
+.delVariable_button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 4.8rem;
+}
+
+.delVariable_empty{
+    @include c_body_3();
+    margin-top: 1rem;
+    color: $neutral_300;
+}
+
+/* <--------------------------- * SECTION1 * --------------------------- */

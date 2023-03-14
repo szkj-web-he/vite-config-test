@@ -1,0 +1,127 @@
+/**
+* @file 
+* @date 2021-12-29
+* @author zhuxiaojiao
+* @lastModify  zhuxiaojiao 2021-12-29
+*/
+
+
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+
+
+/** Import all the reference constant after this line */
+
+@import "~/Constant/breakPoint.scss";
+@import "~/Constant/font.scss";
+@import "~/Constant/color.scss";
+
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+
+
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+
+
+/** The demo mixin is ..........*/
+
+@mixin demo {}
+
+
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+
+
+/* <--------------------------- * SECTION1 * --------------------------- */
+
+.roleAndGroup_container {
+    position: relative;
+    cursor: pointer;
+}
+
+.roleAndGroup_wrap {
+    width: 22.9rem;
+    height: 3.6rem;
+    border: 0.1rem solid $neutral_200;
+    border-radius: 0.5rem;
+    position: relative;
+    color: $neutral_500;
+    padding: 0.4rem 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: none;
+    // &:focus-visible {
+    // }
+}
+
+.roleAndGroup_input {
+    width: 18rem;
+    border: none;
+    outline: none;
+}
+
+.roleAndGroup_box {
+    display: inline-block;
+    width: 18rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    @include body_2;
+}
+
+.roleAndGroup_icon {
+    transition: all 0.2s;
+}
+
+.roleAndGroup_dropDown {
+    width: 29.4rem;
+    height: 18.8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: $white;
+    box-shadow: 0rem 0.4rem 0.6rem rgba(26, 26, 26, 0.06), 0rem 0.6rem 2rem -0.2rem rgba(26, 26, 26, 0.14);
+    border-radius: 0.6rem;
+    display: flex;
+    >ul {
+        height: 100%;
+        padding: 0.43rem;
+        color: $neutral_400;
+        @include body_2;
+        li {
+            padding: 0 0.8rem;
+            height: 2.8rem;
+            line-height: 2.8rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 0.4rem;
+            margin: 0.5rem 0;
+            cursor: pointer;
+            >svg {
+                font-size: 1.2rem;
+            }
+        }
+        .roleAndGroup_active {
+            background-color: $primary_10;
+            color: $primary_600;
+        }
+    }
+}
+
+.roleAndGroup_role {
+    width: 45%;
+    border-radius: 0.1rem solid $neutral_200;
+}
+
+.roleAndGroup_group {
+    width: 55%;
+    overflow: hidden;
+    span {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+
+/* <--------------------------- * SECTION1 * --------------------------- */

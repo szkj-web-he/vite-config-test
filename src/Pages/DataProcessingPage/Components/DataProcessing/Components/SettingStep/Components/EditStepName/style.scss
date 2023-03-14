@@ -1,0 +1,64 @@
+/**
+* @file
+* @date 2022-11-17
+* @author liaoli
+* @lastModify liaoli 2022-11-17
+*/
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+/** Import all the reference constant after this line */
+@use '@datareachable/webpack/Constant/breakPoint.scss' as *;
+@use '@datareachable/webpack/Constant/font.scss' as *;
+@use '@datareachable/webpack/Constant/color.scss' as *;
+
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+/** The demo mixin is ..........*/
+@mixin demo {}
+
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+/* <--------------------------- * SECTION1 * --------------------------- */
+.editStageName_title {
+    @include c_h_5();
+    color: $neutral_700;
+}
+
+.editStageName_tips {
+    @include c_h_7();
+    color: $neutral_500;
+}
+
+.editStepName_button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 4.8rem;
+}
+
+.editStageName_tips {
+    margin-top: 2.4rem;
+    margin-bottom: 0.9rem;
+}
+
+.editStageName_input {
+    width: 100% !important;
+    height: 4rem !important;
+}
+
+.editStageName_nameRepeat{
+    position: relative;
+    border: 0.06rem solid $danger_600 !important;
+
+    &::after {
+        position: absolute;
+        content: "步骤名称重复";
+        bottom: -3rem;
+        left: 0;
+        color: $danger_600;
+    }
+
+    &:focus{
+        border: 0.06rem solid $danger_600 !important;
+    }
+}
+
+/* <--------------------------- * SECTION1 * --------------------------- */

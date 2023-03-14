@@ -1,0 +1,61 @@
+/**
+* @file PagerSetting
+* @date 2021-09-25
+* @author Chaman
+* @lastModify  2021-09-25
+*/
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+/** Import all the reference constant after this line */
+@import "~/Constant/breakPoint.scss";
+@import "~/Constant/font.scss";
+@import "~/Constant/color.scss";
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+/** The demo mixin is ..........*/
+@mixin demo {
+}
+ul {
+    margin-bottom: 0;
+}
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+/* <--------------------------- * SECTION1 * --------------------------- */
+.pagerSetting_container {
+    position: absolute;
+    top: -4rem;
+    right: 4rem;
+    width: 18.5rem;
+    height: 3rem;
+    background-color: $background;
+    box-shadow: $shadow_06dp;
+    border-radius: 0.4rem;
+    z-index: 2;
+    font: $fs_r_12;
+    line-height: 3rem;
+    text-align: center;
+    outline: none;
+    > svg {
+        color: $type;
+        margin-left: 1rem;
+    }
+}
+.pagerSetting_sort {
+    position: absolute;
+    top: 0;
+    left: -15rem;
+    width: 15rem;
+    height: 6.2rem;
+    background-color: $background;
+    box-shadow: $shadow_06dp;
+    border-radius: 0.4rem;
+    text-align: left;
+    svg {
+        padding: 0 0.7rem 0 0.8rem;
+    }
+    > ul > li {
+        height: 3.1rem;
+    }
+    > ul > li:hover {
+        background-color: rgba($color: $primary_variant, $alpha: 0.15);
+    }
+}
+/* <--------------------------- * SECTION1 * --------------------------- */

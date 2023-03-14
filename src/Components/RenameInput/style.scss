@@ -1,0 +1,40 @@
+/**
+* @file 
+* @date 2021-10-21
+* @author zhoubin 
+* @lastModify zhoubin  2021-10-21
+*/
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+/** Import all the reference constant after this line */
+@import "~/Constant/breakPoint.scss";
+@import "~/Constant/font.scss";
+@import "~/Constant/color.scss";
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+/** The demo mixin is ..........*/
+@mixin demo {
+}
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+/* <--------------------------- * SECTION1 * --------------------------- */
+.gridView_renameInput {
+    position: relative;
+    width: 20rem;
+    input {
+        width: 100%;
+        padding-right: 2.5rem;
+        padding-bottom: 0.2rem;
+        font: $fs_m_14;
+        color: $gray_1;
+        border: 0;
+        border-bottom: 0.1rem solid $primary_variant;
+        outline: none;
+        box-sizing: border-box;
+    }
+    svg {
+        position: absolute;
+        top: 0.3rem;
+        right: 0;
+        cursor: pointer;
+    }
+}
+/* <--------------------------- * SECTION1 * --------------------------- */

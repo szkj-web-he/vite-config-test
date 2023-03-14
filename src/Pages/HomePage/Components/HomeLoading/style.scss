@@ -1,0 +1,47 @@
+/**
+* @file 
+* @date 2022-04-29
+* @author zhuxiaojiao
+* @lastModify zhuxiaojiao 2022-04-29
+*/
+
+
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+
+
+/** Import all the reference constant after this line */
+
+@import "~/Constant/breakPoint.scss";
+@import "~/Constant/font.scss";
+@import "~/Constant/color.scss";
+
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+
+
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+
+
+/** The demo mixin is ..........*/
+
+@mixin demo {}
+
+
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+
+
+/* <--------------------------- * SECTION1 * --------------------------- */
+
+.homeLoading {
+    width: 100%;
+    height: 100%;
+    padding: 2.4rem;
+    .main_one,
+    .main_two {
+        margin-bottom: 1.2rem;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+/* <--------------------------- * SECTION1 * --------------------------- */

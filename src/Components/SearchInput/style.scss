@@ -1,0 +1,117 @@
+/**
+* @file 
+* @date 2021-12-30
+* @author zhuxiaojiao
+* @lastModify zhuxiaojiao 2021-12-30
+*/
+
+
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+
+
+/** Import all the reference constant after this line */
+
+@import "~/Constant/breakPoint.scss";
+@import "~/Constant/font.scss";
+@import "~/Constant/color.scss";
+
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+
+
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+
+
+/** The demo mixin is ..........*/
+
+@mixin demo {}
+
+
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+
+
+/* <--------------------------- * SECTION1 * --------------------------- */
+
+.searchInput_wrap {
+    border: 0.1rem solid $neutral_200;
+    border-radius: 0.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // overflow: hidden;
+    height: 3.6rem;
+    padding: 0 0.5rem;
+    position: relative;
+    float: right;
+    @include body_2;
+    &:hover {
+        border-color: $primary_400;
+    }
+    &:focus {
+        border-color: $primary_400;
+    }
+    .search_icon {
+        position: absolute;
+        top: 50%;
+        right: 1rem;
+        transform: translateY(-50%);
+        color: $neutral_300;
+        font-size: 1.4rem;
+        width: 2.8rem;
+        height: 2.8rem;
+        background-color: rgba($primary_600, 0.1);
+        border-radius: 0.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $primary_600;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.searchInput_wrap>input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    color: $neutral_500;
+    padding: 0 5rem 0 1.6rem;
+    &::placeholder {
+        color: $neutral_300;
+    }
+}
+
+.searchInput_dropDown {
+    overflow-x: hidden;
+    background-color: $white;
+    position: absolute;
+    bottom: -10rem;
+    box-shadow: $shadow-regular;
+    border-radius: 0.6rem;
+    // z-index: 1;
+    color: $neutral_400;
+    background-color: $white;
+    p {
+        margin-bottom: unset;
+    }
+    .scroll_scrollBody {
+        padding: 1.2rem 0.4rem;
+    }
+    .searchInput_association {
+        padding: 0.6rem 1rem;
+        cursor: pointer;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        @include body_2;
+        margin-bottom: 0.6rem;
+        border-radius: 0.6rem;
+        &:hover {
+            background-color: $primary_50;
+        }
+    }
+}
+
+
+/* <--------------------------- * SECTION1 * --------------------------- */

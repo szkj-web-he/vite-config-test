@@ -1,0 +1,161 @@
+/**
+* @file
+* @date 2022-05-15
+* @author zhuxiaojiao
+* @lastModify zhuxiaojiao 2022-05-15
+*/
+
+
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+
+
+/** Import all the reference constant after this line */
+
+@import "~/Constant/breakPoint.scss";
+@import "~/Constant/font.scss";
+@import "~/Constant/color.scss";
+
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+
+
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+
+
+/** 盒子水平垂直居中*/
+
+@mixin elementCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+
+
+/* <--------------------------- * SECTION1 * --------------------------- */
+
+.dataProcessingNavcontainer {
+    height: 7rem;
+    background-color: $bg;
+    border-bottom: 0.1rem solid $neutral_200;
+    display: flex;
+    align-items: center;
+
+    >div {
+        height: 100%;
+    }
+
+    .dataProcessingNavleft {
+        width: 10.6rem;
+        @include elementCenter;
+        @include body_1;
+        color: $neutral_500;
+        cursor: pointer;
+
+        svg {
+            transform: rotate(180deg);
+            margin-right: 0.8rem;
+        }
+    }
+
+    .dataProcessingNavmiddle {
+        flex: 1;
+        @include elementCenter;
+        color: $neutral_400;
+        @include body_2;
+
+        >div {
+            @include elementCenter;
+            cursor: pointer;
+
+            span {
+                width: 2.4rem;
+                height: 2.4rem;
+                border-radius: 50%;
+                border: 0.1rem solid $neutral_400;
+                @include elementCenter;
+                margin-right: 0.8rem;
+            }
+
+            p {
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        >i {
+            margin: 0 2.4rem;
+            font-size: 1.8rem;
+            margin-top: -1rem;
+        }
+
+        .i_active {
+            color: $primary_600;
+        }
+
+        .bar_active {
+            span {
+                border-color: transparent;
+                background-color: $primary_600;
+                color: $white;
+            }
+
+            p {
+                color: $primary_600;
+                font: $fs_m_16;
+            }
+        }
+
+        .not_enter {
+            cursor: default;
+
+            span {
+                border-color: $neutral_300;
+                color: $neutral_300;
+            }
+
+            p {
+                color: $neutral_300;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+
+    .dataProcessingNavright {
+        width: 10.6rem;
+        @include elementCenter;
+
+        svg {
+            @include body_1;
+            color: $primary_600;
+            margin-right: 2.4rem;
+            cursor: pointer;
+        }
+    }
+}
+
+.nav_copyUrl {
+    .kite_body {
+        width: unset;
+        height: unset;
+        white-space: nowrap;
+        // word-break: keep-all;
+    }
+}
+
+.notEnter_popover {
+
+    .kite_body,
+    .popover_body {
+        width: 17.6rem;
+        height: unset;
+    }
+}
+
+/* <--------------------------- * SECTION1 * --------------------------- */

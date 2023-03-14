@@ -1,0 +1,76 @@
+/**
+* @file progress bar
+* @date 2021-04-16
+* @author Chaman
+* @lastModify  2021-04-16
+*/
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+/** Import all the reference constant after this line */
+@import "~/Constant/breakPoint.scss";
+@import "~/Constant/font.scss";
+@import "~/Constant/color.scss";
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+/** The demo mixin is ..........*/
+@mixin demo {
+}
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+/* <--------------------------- * SECTION ONE * --------------------------- */
+/* <--------------------------- * SECTION ONE * --------------------------- */
+/* <------------------------------------ **** PROGRESS CONTAINER START **** ------------------------------------ */
+.progressBar_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 67.4rem;
+    padding-top: 4.9rem;
+    padding-bottom: 6.4rem;
+    margin: auto;
+    svg {
+        cursor: pointer;
+    }
+}
+
+.progressBar_content {
+    width: 33.2rem;
+}
+.progressBar_content .progressBar_contentTop {
+    display: flex;
+    align-items: center;
+}
+.progressBar_contentTop .progressBar_circle {
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: $primary_variant;
+    border-radius: 50%;
+}
+.progressBar_contentTop .progressBar_circleGray {
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: $line_light;
+    border-radius: 50%;
+}
+.progressBar_contentTop .progressBar_line {
+    width: 30.4rem;
+    height: 0.201rem;
+    margin: 0 0.4rem;
+    background: $not_activated;
+    border-radius: 0.6rem;
+}
+.progressBar_contentBottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.13rem;
+    font: $fs_r_14;
+    color: $gray_1;
+}
+.progressBar_contentBottom span:first-child {
+    transform: translateX(-50%);
+}
+.progressBar_contentBottom span:last-child {
+    transform: translateX(50%);
+}
+.progressBar_gray {
+    color: $line_dark;
+}
+/* <------------------------------------ **** PROGRESS CONTAINER END **** ------------------------------------ */

@@ -1,0 +1,157 @@
+/**
+* @file
+* @date 2022-11-14
+* @author liaoli
+* @lastModify liaoli 2022-11-14
+*/
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+/** Import all the reference constant after this line */
+@use '@datareachable/webpack/Constant/breakPoint.scss' as *;
+@use '@datareachable/webpack/Constant/font.scss' as *;
+@use '@datareachable/webpack/Constant/color.scss' as *;
+
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+/** The demo mixin is ..........*/
+@mixin demo {}
+
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+/* <--------------------------- * SECTION1 * --------------------------- */
+.scriptSideBar_title {
+    display: flex;
+    align-items: center;
+    padding-left: 1.6rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    cursor: pointer;
+
+    .icon_wrap {
+        font-size: 1rem;
+        margin-right: 0.8rem;
+        transform: rotate(-90deg);
+        transition: .3s all ease
+    }
+
+    p {
+        @include c_h_6();
+        color: $neutral_500;
+    }
+}
+
+.scriptSideBar_item {
+    cursor: pointer;
+
+    >div:first-of-type {
+        display: flex;
+        align-items: center;
+        padding-left: 2.4rem;
+        // margin: 0.8rem 0;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+
+        .icon_wrap {
+            font-size: 1rem;
+            margin-right: 1.2rem;
+            transform: rotate(-90deg);
+            transition: .3s all ease
+        }
+
+        p {
+            @include c_h_7();
+            color: $neutral_400;
+        }
+    }
+}
+
+.scriptSideBar_script {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.6rem;
+    padding-left: 5.6rem;
+    padding-right: 1.6rem;
+    cursor: pointer;
+
+    i {
+        position: absolute;
+        left: 0;
+        display: none;
+        width: 0.5rem;
+        height: 3.6rem;
+        background-color: $primary_variant;
+        border-radius: 0 0.4rem 0.4rem 0;
+    }
+
+    p {
+        @include c_body_3();
+        color: $neutral_400;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    span {
+        @include c_label_1();
+        display: none;
+        width: 4.1rem;
+        flex-shrink: 0;
+        margin-left: 0.5rem;
+        text-align: center;
+        border: 0.1rem solid $primary_500;
+        color: $primary_500;
+        border-radius: 2rem;
+    }
+}
+
+.scriptSideBar_selfScript {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+
+    >div {
+        display: flex;
+        align-items: center;
+
+        .icon_wrap {
+            font-size: 1rem;
+            margin-right: 0.8rem;
+            transform: rotate(-90deg);
+            transition: .3s all ease
+        }
+
+        p {
+            @include c_h_6();
+            color: $neutral_500;
+        }
+    }
+
+    >.icon_wrap {
+        font-size: 2rem;
+        color: $neutral_300;
+        cursor: pointer;
+    }
+}
+
+.scriptSideBar_active {
+    background-color: $primary_50;
+
+    p {
+        color: $primary_600;
+    }
+
+    i {
+        display: block;
+    }
+}
+
+.scriptSideBar_empty {
+    @include c_body_3();
+    color: $neutral_300;
+    margin-left: 4rem;
+    padding: 0.8rem;
+}
+
+/* <--------------------------- * SECTION1 * --------------------------- */

@@ -1,0 +1,170 @@
+/**
+* @file 
+* @date 2021-04-16
+* @author zhoubin
+* @lastModify  2021-04-16
+*/
+
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+
+/** Import all the reference constant after this line */
+
+@import "~/Constant/breakPoint.scss";
+@import "~/Constant/font.scss";
+@import "~/Constant/color.scss";
+
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+
+/** The demo mixin is ..........*/
+
+@mixin demo {
+}
+
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+
+/* <--------------------------- * SECTION1 * --------------------------- */
+
+p {
+    margin: 0;
+}
+
+.listView_container {
+    position: relative;
+    width: 100%;
+    // max-height: 60rem;
+    height: 100%;
+    // margin-bottom: 2.4rem;
+}
+
+table thead tr,
+tbody tr {
+    table-layout: fixed;
+    display: table;
+    width: 100%;
+}
+
+.listView_container table {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.listView_container table > thead {
+    display: block;
+    height: 5.3rem;
+    padding: 0 1rem;
+    color: $line_dark;
+    text-align: left;
+}
+
+.listView_container table > thead > tr {
+    height: 100%;
+}
+
+.listView_container table > thead > tr th {
+    font: $fs_m_14;
+}
+
+.listView_container table > tbody {
+    display: block;
+    // max-height: calc(100vh - 39rem);
+    // max-height: calc(100vh - 40rem);
+    // padding-left: 1rem;
+    // padding-right: 0.6rem;
+    padding: 0 0.6rem 0rem 1rem;
+    // overflow-y: scroll;
+}
+
+.listView_container table > tbody::-webkit-scrollbar {
+    position: absolute;
+    width: 0.4rem;
+}
+
+.listView_container table > tbody::-webkit-scrollbar-thumb {
+    background: $hover;
+}
+
+.listView_container table > tbody > tr {
+    height: 6.6rem;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: $display_font;
+    border-radius: 0.6rem;
+}
+
+.listView_container table > tbody > tr:not(:first-child) {
+    border-top: 0.1rem solid $neutral_100;
+}
+
+.listView_container table > thead {
+    margin-bottom: 0.5rem;
+}
+
+.listView_container table > thead > tr {
+    border-bottom: 0.1rem solid $neutral_200;
+}
+
+.listView_container table > thead > th {
+    font: $fs_m_14;
+}
+
+.listView_container table > thead > tr > th:nth-of-type(5) {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.listView_container tr > th:nth-of-type(1) {
+    padding-left: 7rem;
+    box-sizing: border-box;
+}
+
+.listView_container tr > td:nth-of-type(1),
+.listView_container tr > th:nth-of-type(1) {
+    width: 47.043%;
+}
+
+.listView_container tr > td:nth-of-type(2),
+.listView_container tr > th:nth-of-type(2) {
+    width: 16.935%;
+}
+
+.listView_container tr > td:nth-of-type(3),
+.listView_container tr > th:nth-of-type(3) {
+    width: 15.591%;
+}
+
+// .listView_container tr>td:nth-of-type(4) {
+// color: $line_dark;
+// }
+.listView_container tr > td:nth-of-type(5) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6.6rem;
+    text-align: right;
+}
+
+.listView_container tr > td:nth-of-type(1) > div {
+    display: flex;
+    align-items: center;
+    color: $neutral_500;
+    padding-right: 8rem;
+}
+
+.listView_container tr > td:nth-of-type(1) > div img {
+    margin-left: 2.4rem;
+    margin-right: 1.774rem;
+    cursor: pointer;
+}
+
+.listView_container .listView_setting {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+}
+
+/* <--------------------------- * SECTION1 * --------------------------- */

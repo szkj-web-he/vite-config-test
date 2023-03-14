@@ -1,0 +1,108 @@
+/**
+* @file hot key component
+* @date 2020-11-17
+* @author Andy
+* @lastModify Andy 2020-11-17
+*/
+
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+
+/** Import all the reference constant after this line */
+
+@import "../../Constant/breakPoint.scss";
+@import "../../Constant/font.scss";
+@import "../../Constant/color.scss";
+
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+
+/*
+/*
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+
+/* <--------------------------- * SECTION1 * --------------------------- */
+
+.HKC_container {
+    font: $body_b2;
+    border-radius: 0.4rem;
+    box-shadow: $shadow_01dp;
+    overflow: scroll;
+    overflow-x: hidden;
+    max-height: 20rem;
+    background: $background;
+}
+
+.HKC_selectionWrapper {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 0.5rem;
+    background: $background;
+    cursor: pointer;
+}
+
+.HKC_selectionItem {
+    height: 5rem;
+    color: $line_dark;
+    background: $background;
+    transition: 0.2s;
+}
+
+.HKC_selectionItem__selected {
+    height: 5rem;
+    color: $line_dark;
+    background: $hover;
+    transition: 0.2s;
+}
+
+.HKC_selectionItem:hover {
+    background: $hover;
+    transition: 0.2s;
+}
+
+.HKC_selectionItemIcon {
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    margin-top: 0.5rem;
+    border: 0.1rem solid $line_light;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    box-sizing: border-box;
+    border-radius: 0.4rem;
+    line-height: 4rem;
+    text-align: center;
+    font-size: $fs_18;
+    vertical-align: top;
+    background: $background;
+}
+
+.HKC_selectionItemText {
+    display: inline-block;
+    flex-direction: column;
+    height: 4rem;
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+
+.HKC_selectionItemLabel {
+    height: 2rem;
+    line-height: 2rem;
+}
+
+.HKC_selectionItemContent {
+    height: 2rem;
+    line-height: 2rem;
+    font-size: $fs_12;
+    color: $line_dark;
+}
+
+.HKC_title {
+    color: $line_dark;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding-left: 1rem;
+}
+
+/* <--------------------------- * SECTION1 * --------------------------- */

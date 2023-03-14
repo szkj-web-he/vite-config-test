@@ -1,0 +1,54 @@
+/**
+* @file
+* @date 2021-12-14
+* @author zhoubin
+* @lastModify zhoubin 2021-12-14
+*/
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+/** Import all the reference constant after this line */
+@import "~/Constant/breakPoint.scss";
+@import "~/Constant/font.scss";
+@import "~/Constant/color.scss";
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+/** The demo mixin is ..........*/
+@mixin demo {
+}
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+/* <--------------------------- * SECTION1 * --------------------------- */
+
+.sortBox_settingIconContainer {
+    padding-left: 0.8rem;
+    height: 2.2rem;
+    font-size: 1.4rem;
+    color: $primary_600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    > svg {
+        font-size: 1.6rem;
+    }
+    > span {
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 0 0.5rem;
+        color: $neutral_400;
+        transition: all 0.4s;
+        // transition: all 1s cubic-bezier(0.25, 1, 0.5, 1);
+        @include label;
+    }
+}
+.sortBox_settingTips {
+    position: absolute;
+    top: 50%;
+    left: -11.3rem;
+    transform: translateY(-50%);
+}
+.ToolTips_container {
+    padding: 0.8rem;
+    > span {
+        line-height: 1.6rem !important;
+    }
+}
+/* <--------------------------- * SECTION1 * --------------------------- */

@@ -1,0 +1,53 @@
+/**
+* @file 
+* @date 2021-10-30
+* @author zhoubin 
+* @lastModify zhoubin  2021-10-30
+*/
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+/** Import all the reference constant after this line */
+@import "~/Constant/breakPoint.scss";
+@import "~/Constant/font.scss";
+@import "~/Constant/color.scss";
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+/** The demo mixin is ..........*/
+@mixin demo {
+}
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+/* <------------------------------------ **** ONE START **** ------------------------------------ */
+.skeletonContainer_container {
+    display: inline-block;
+    width: auto;
+}
+.skeletonAvatar_avatar {
+    display: inline-block;
+    vertical-align: top;
+    background: rgba(190, 190, 190, 0.2);
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+}
+.skeletonAvatar_avatar_circle {
+    border-radius: 50%;
+}
+.skeletonAvatar_avatar_active {
+    background: linear-gradient(
+        90deg,
+        rgba(190, 190, 190, 0.2) 25%,
+        rgba(129, 129, 129, 0.24) 37%,
+        rgba(190, 190, 190, 0.2) 63%
+    );
+    background-size: 400% 100%;
+    animation: skeleton-loading 1.4s ease infinite;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+/* <------------------------------------ **** ONE END **** ------------------------------------ */

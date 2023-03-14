@@ -1,0 +1,114 @@
+/**
+* @file overview nav
+* @date 2021-03-27
+* @author Chaman
+* @lastModify lidaoping 2021-03-27
+*/
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+/** Import all the reference constant after this line */
+@import "~/Constant/breakPoint.scss";
+@import "~/Constant/font.scss";
+@import "~/Constant/color.scss";
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+/** The demo mixin is ..........*/
+@mixin clearFloat {
+    &::after,
+    &::before {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+    & {
+        *zoom: 1;
+    }
+}
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+/* <--------------------------- * SECTION COMMON * --------------------------- */
+ul li {
+    list-style: none;
+}
+ul {
+    margin-bottom: 0;
+}
+/* <--------------------------- * SECTION COMMON * --------------------------- */
+/* <------------------------------------ **** SECTION ONE START **** ------------------------------------ */
+.overviewNav_sectionOne > ul li {
+    float: left;
+}
+.overviewNav_sectionOne {
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.06rem solid $not_activated;
+}
+.overviewNav_sectionOneChat {
+    display: flex;
+    cursor: pointer;
+}
+.overviewNav_sectionOneUl {
+    @include clearFloat();
+    padding-left: 0;
+}
+.overviewNav_sectionOneUl a:nth-child(n + 2) {
+    margin-left: 1.5rem;
+}
+.overviewNav_sectionOneUl li {
+    display: flex;
+    font: $fs_r_14;
+    color: $line_dark;
+    line-height: 2.2rem;
+}
+
+.overviewNav_sectionOneUl a {
+    float: left;
+}
+.overviewNav_sectionOneUl a:last-child {
+    li > div:last-child {
+        line-height: 2.2rem;
+    }
+}
+.overviewNav_sectionOneUl a:last-child {
+    li > div:last-child {
+        display: none;
+    }
+}
+.overviewNav_sectionOneUl li > div:last-child {
+    margin-left: 1.5rem;
+    line-height: 2rem;
+    > span:first-child {
+        display: inline-block;
+        height: 0.3rem;
+        width: 0.3rem;
+        border-radius: 0.15rem;
+        background-color: $line_light;
+        opacity: 0.3;
+    }
+    > span:last-child {
+        margin-left: 0.5rem;
+        display: inline-block;
+        height: 0.4rem;
+        width: 0.4rem;
+        border-radius: 0.2rem;
+        background-color: $line_light;
+        opacity: 0.7;
+    }
+}
+.overviewNav_sectionOneLi {
+    color: $line_dark;
+}
+.overviewNav_sectionOneLi_active {
+    li {
+        color: $primary_variant !important;
+        div:last-child > span {
+            &:first-child,
+            &:last-child {
+                background: $primary_variant;
+            }
+        }
+    }
+}
+/* <------------------------------------ **** SECTION ONE END **** ------------------------------------ */

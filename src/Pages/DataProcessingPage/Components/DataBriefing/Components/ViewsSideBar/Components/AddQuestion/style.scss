@@ -1,0 +1,73 @@
+/**
+* @file
+* @date 2022-09-01
+* @author liaoli
+* @lastModify liaoli 2022-09-01
+*/
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+/** Import all the reference constant after this line */
+@use '@datareachable/webpack/Constant/breakPoint.scss' as *;
+@use '@datareachable/webpack/Constant/font.scss' as *;
+@use '@datareachable/webpack/Constant/color.scss' as *;
+
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+/** The demo mixin is ..........*/
+@mixin demo {}
+
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+/* <--------------------------- * SECTION1 * --------------------------- */
+.addQuestion_alert {
+    .addQuestion_container {
+        width: 100%;
+        height: 100%;
+
+        >h2 {
+            @include c_h_4();
+            color: $neutral_700;
+        }
+
+        >p {
+            @include c_body_1();
+            margin-top: 0.8rem;
+            margin-bottom: 3.2rem;
+            color: $neutral_300;
+        }
+
+        >h3 {
+            @include c_h_6();
+            margin-bottom: 0.8rem;
+            color: $neutral_600;
+        }
+
+        .check_wrap {
+            @include body_2();
+            height: 2rem;
+            color: $neutral_500;
+        }
+
+        .addQuestion_button {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 4.8rem;
+            margin-right: 1.6rem;
+        }
+    }
+
+    .alert_container {
+        padding: 3.2rem 0.8rem 2.4rem 3.2rem;
+    }
+
+    .addQuestion_notQuestion {
+        @include c_body_3();
+        height: 22.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: $neutral_300;
+    }
+}
+
+/* <--------------------------- * SECTION1 * --------------------------- */

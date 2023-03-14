@@ -1,0 +1,312 @@
+/**
+* @file
+* @date 2022-11-16
+* @author liaoli
+* @lastModify liaoli 2022-11-16
+*/
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+/** Import all the reference constant after this line */
+@use '@datareachable/webpack/Constant/breakPoint.scss' as *;
+@use '@datareachable/webpack/Constant/font.scss' as *;
+@use '@datareachable/webpack/Constant/color.scss' as *;
+
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+/** The demo mixin is ..........*/
+@mixin demo {}
+
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+/* <--------------------------- * SECTION1 * --------------------------- */
+.respondentVarInfo_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    >h2 {
+        @include c_h_6();
+        color: $neutral_700;
+    }
+
+    >.respondentVarInfo_preview {
+        display: flex;
+        align-items: center;
+        color: $neutral_300;
+        cursor: pointer;
+
+        .icon_wrap {
+            font-size: 1.2rem;
+            margin-right: 0.5rem;
+        }
+
+        p {
+            @include body_1();
+        }
+    }
+
+    .respondentVarInfo_canPreview {
+        color: $primary_600;
+
+        &:hover {
+            color: $primary_400;
+        }
+    }
+}
+
+.respondentVarInfo_title {
+    @include c_h_7();
+    margin-top: 2.4rem;
+    margin-bottom: 0.8rem;
+    color: $neutral_600;
+}
+
+.respondentVarInfo_name {
+    width: 100% !important;
+    height: 4rem !important;
+}
+
+.respondentVarInfo_container {
+    width: 100%;
+    margin-top: 2rem;
+    border: 0.1rem solid $neutral_200;
+    border-radius: 1rem;
+}
+
+.respondentVarInfo_varInfo {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+}
+
+.respondentVarInfo_varType {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7.2rem;
+    height: 100%;
+    border-right: 0.1rem solid $neutral_200;
+}
+
+.respondentVarInfo_typeIcon {
+    font-size: 1.6rem;
+    margin-right: 0.8rem;
+    color: $primary_600;
+}
+
+.respondentVarInfo_dropdownIcon {
+    font-size: 1.2rem;
+}
+
+.respondentVarInfo_titleWarp {
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 1.6rem;
+}
+
+.respondentVarInfo_titleEdit {
+    @include c_body_3();
+    width: max-content;
+    padding: 0.2rem;
+    outline: none;
+    color: $neutral_500;
+    overflow: hidden;
+    white-space: nowrap;
+
+    &:focus {
+        border-bottom: 0.1rem solid $primary_600;
+
+        &:empty::after {
+            content: '';
+        }
+    }
+
+    &:empty::after {
+        content: '请在此编辑该变量的标题...';
+        color: $neutral_300;
+    }
+}
+
+.respondentVarInfo_titleInp {
+    @include c_body_3();
+    outline: none;
+    height: 100%;
+    width: 100%;
+    padding: 1rem 1.6rem;
+    color: $neutral_500;
+    border: none;
+    border-radius: 1rem;
+
+    &::placeholder {
+        color: $neutral_300;
+    }
+}
+
+.respondentVarInfo_descTitle {
+    @include c_h_7();
+    height: 3.7rem;
+    padding: 0.8rem 0 0.8rem 1.6rem;
+    color: $neutral_600;
+    border-top: 0.1rem solid $neutral_200;
+    border-bottom: 0.1rem solid $neutral_200;
+}
+
+.respondentVarInfo_desc {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 8.6rem !important;
+    border-color: transparent !important;
+    border-bottom: 0.1rem solid $neutral_200 !important;
+    resize: none;
+    border-radius: 0;
+
+    &:focus {
+        border-bottom: 0.1rem solid $neutral_200 !important;
+    }
+}
+
+.respondentVarInfo_row,
+.respondentVarInfo_col {
+    @include c_h_7();
+    color: $neutral_600;
+    height: 4rem;
+    padding: 0.8rem 0 0.8rem 1.6rem;
+}
+
+.respondentVarInfo_addOption {
+    @include c_body_3();
+    display: flex;
+    align-items: center;
+    height: 3.6rem;
+    padding-left: 1.6rem;
+    color: $primary_600;
+    border-top: 0.1rem solid $neutral_200;
+    border-bottom: 0.1rem solid $neutral_200;
+
+    >div {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        &:hover {
+            color: $primary_400;
+        }
+
+        .icon_wrap {
+            font-size: 1.5rem;
+            margin-right: 0.8rem;
+        }
+    }
+
+    >i {
+        width: 0.1rem;
+        height: 1.6rem;
+        margin: 0 1.6rem;
+        background-color: $neutral_200;
+        border-radius: 50%;
+    }
+}
+
+.respondentVarInfo_option {
+    display: flex;
+    align-items: center;
+    height: 3.6rem;
+    margin-top: -0.1rem;
+    border-top: 0.1rem solid $neutral_200;
+    border-bottom: 0.1rem solid $neutral_200;
+}
+
+.respondentVarInfo_optionSet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8.6rem;
+    height: 100%;
+
+    .icon_wrap {
+        margin: 0 0.4rem;
+        font-size: 1.2rem;
+        color: $neutral_400;
+        cursor: pointer;
+    }
+
+    .icon_wrap:nth-of-type(2) {
+        cursor: grab
+    }
+}
+
+.respondentVarInfo_index {
+    @include body_2();
+    width: 5.3rem;
+    height: 100%;
+    padding: 0.8rem 0;
+    text-align: center;
+    color: $neutral_500;
+    border-left: 0.1rem solid $neutral_200;
+    border-right: 0.1rem solid $neutral_200;
+}
+
+.respondentVarInfo_content {
+    @include c_body_3();
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0.8rem 1.6rem;
+    color: $neutral_500;
+}
+
+.respondentVarInfo_questionType {
+    width: 10.6rem;
+    height: 15.2rem;
+    padding: 0.8rem 0.4rem;
+    background-color: #fff;
+    border-radius: 0.6rem;
+    box-shadow: $shadow_regular;
+
+    >div {
+        display: flex;
+        align-items: center;
+        padding: 0.4rem 1rem;
+        margin-bottom: 0.8rem;
+        border-radius: 0.4rem;
+        color: $neutral_400;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $primary_50;
+        }
+
+        .icon_wrap {
+            font-size: 1.6rem;
+            margin-right: 1rem;
+        }
+
+        p {
+            @include c_body_3();
+        }
+    }
+
+    >div:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.respondentVarInfo_nameRepeat {
+    position: relative;
+    border-color: $danger_600 !important;
+
+    &::after {
+        position: absolute;
+        content: "变量名称重复或格式不正确";
+        bottom: -1.5rem;
+        left: 0;
+        color: $danger_600;
+    }
+}
+
+/* <--------------------------- * SECTION1 * --------------------------- */

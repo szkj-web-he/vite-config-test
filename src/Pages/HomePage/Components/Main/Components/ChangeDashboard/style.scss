@@ -1,0 +1,100 @@
+/**
+* @file
+* @date 2021-12-14
+* @author zhoubin
+* @lastModify zhoubin 2021-12-14
+*/
+
+
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+
+
+/** Import all the reference constant after this line */
+
+@import "~/Constant/breakPoint.scss";
+@import "~/Constant/font.scss";
+@import "~/Constant/color.scss";
+
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+
+
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+
+
+/** The demo mixin is ..........*/
+
+@mixin demo {}
+
+
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+
+
+/* <--------------------------- * SECTION1 * --------------------------- */
+
+.main_distributions .dropDownListV2_container {
+    padding: 0;
+    border-width: 0;
+    &:hover {
+        border-width: 0;
+    }
+    svg {
+        font-size: 1.2rem;
+    }
+}
+
+.main_distributions .dropDownListV2_content {
+    @include h_3;
+    margin-right: 1rem;
+}
+
+.main_distributions {
+    width: unset !important;
+    max-width: 27rem;
+    cursor: pointer;
+    .dropDownListV2_container {
+        outline: none;
+    }
+    .dropDownListV2_content>div {
+        @include h_3;
+        color: $neutral_600 !important;
+    }
+    .dropDownListV2_dropdownIcon {
+        color: $neutral_600;
+    }
+}
+
+.dropDown_list {
+    width: 25.8rem;
+    .kite_body {
+        width: 100%;
+        .dropDownListV2_floatingWrap__large {
+            padding: unset;
+            box-shadow: 0rem 0.2rem 0.6rem rgba(26, 26, 26, 0.06), 0rem 0.3rem 1.5rem rgba(26, 26, 26, 0.1);
+            .dropDownListV2_labelContent {
+                color: $neutral_400;
+            }
+        }
+        .dropDownListV2_floatingLabelActive .dropDownListV2_labelContent {
+            color: $primary_600 !important;
+        }
+    }
+    .dropDownListV2_floatingLabels {
+        padding: 1.2rem;
+        >li:not(:first-child) {
+            margin-top: 0.8rem;
+        }
+        >li {
+            border-radius: 0.6rem;
+            .dropDownListV2_labelContent {
+                font: $fs_r_16;
+                line-height: 3.2rem;
+            }
+            &:hover {
+                background-color: $primary_50;
+            }
+        }
+    }
+}
+
+
+/* <--------------------------- * SECTION1 * --------------------------- */

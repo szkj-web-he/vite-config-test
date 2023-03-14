@@ -1,0 +1,212 @@
+/**
+* @file
+* @date 2022-11-09
+* @author liaoli
+* @lastModify liaoli 2022-11-09
+*/
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+/** Import all the reference constant after this line */
+@use '@datareachable/webpack/Constant/breakPoint.scss' as *;
+@use '@datareachable/webpack/Constant/font.scss' as *;
+@use '@datareachable/webpack/Constant/color.scss' as *;
+
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+/** The demo mixin is ..........*/
+@mixin demo {}
+
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+/* <--------------------------- * SECTION1 * --------------------------- */
+.dataProcessing_active {
+    background-color: $bg;
+}
+
+.dataProcessing_option {
+    @include c_h_7();
+    height: 5.2rem;
+    padding: 1.6rem;
+    color: $neutral_600;
+    border-radius: 1rem;
+    margin-bottom: 0;
+
+    &:hover {
+        background-color: $bg;
+    }
+
+    .radio_content {
+        flex: 1;
+    }
+}
+
+.dataProcessing_custom__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.dataProcessing_customContent {
+    height: 34.4rem;
+    padding-bottom: 1.6rem;
+    background-color: $bg;
+}
+
+.dataProcessing_emptyStage {
+    height: 100%;
+    text-align: center;
+
+    p {
+        @include c_body_3();
+        margin-bottom: 0.9rem;
+        color: $neutral_300;
+    }
+
+    >div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $primary_600;
+        cursor: pointer;
+
+        span {
+            @include c_body_3();
+        }
+
+        .icon_wrap {
+            font-size: 1.4rem;
+            margin-right: 0.5rem;
+        }
+
+        &:hover{
+            color: $primary_400;
+        }
+    }
+}
+
+.customStage_option {
+    display: flex;
+    justify-content: space-between;
+
+    >div {
+        display: flex;
+        align-items: center;
+    }
+
+    >div:first-of-type {
+        .icon_wrap {
+            font-style: 1.6rem;
+            margin-left: 2.2rem;
+            margin-right: 0.6rem;
+            color: $display_font;
+        }
+
+        span {
+            @include c_body_3();
+            color: $display_font;
+        }
+    }
+
+    >div:last-of-type {
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 7.2rem;
+            height: 2.8rem;
+            margin-left: 2rem;
+            color: $primary_600;
+            border: 0.1rem solid $primary_600;
+            border-radius: 0.6rem;
+            transition: .3s all ease;
+        }
+
+        >div:first-of-type{
+            &:hover {
+                background-color: $primary_50;
+            }
+        }
+
+        >div:last-of-type{
+            background-color: $primary_600;
+            border-color: $primary_600;
+            color: #fff;
+
+            &:hover {
+                border-color: $primary_400;
+                background-color: $primary_400;
+            }
+        }
+
+        p {
+            @include c_body_3();
+            margin-left: 0.5rem;
+        }
+    }
+}
+
+.customStage_optionKite {
+    width: 10.4rem;
+    height: 11.6rem;
+    padding: 0.8rem 0.4rem;
+    border-radius: 0.6rem;
+    box-shadow: $shadow_regular;
+    background-color: #fff;
+
+    >div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        >div {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            height: 2.8rem;
+            padding-left: 0.7rem;
+            margin-bottom: 0.8rem;
+            color: $neutral_400;
+            border-radius: 0.4rem;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $primary_50;
+            }
+
+            .icon_wrap {
+                font-size: 1.4rem;
+            }
+
+            span {
+                @include c_body_3();
+                margin-left: 0.9rem;
+            }
+        }
+    }
+}
+
+.dataProcessing_custom__main {
+    height: 100%;
+    overflow: hidden;
+}
+
+.dataProcessing_custom__hidden {
+    display: none !important;
+}
+
+.dataProcessing_customStatus__popover{
+
+    .popover_body{
+        width: max-content;
+        height: auto;
+    }
+}
+
+.dataProcessing_customStatus__notSelect{
+    border-color: $neutral_300 !important;
+    color: $neutral_300 !important;
+    cursor: no-drop !important;
+
+    &:hover{
+        background-color: #fff !important;
+    }
+}
+
+/* <--------------------------- * SECTION1 * --------------------------- */

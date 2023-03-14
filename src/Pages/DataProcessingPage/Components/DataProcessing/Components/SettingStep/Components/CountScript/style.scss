@@ -1,0 +1,103 @@
+/**
+* @file
+* @date 2022-11-14
+* @author liaoli
+* @lastModify liaoli 2022-11-14
+*/
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+/** Import all the reference constant after this line */
+@use '@datareachable/webpack/Constant/breakPoint.scss' as *;
+@use '@datareachable/webpack/Constant/font.scss' as *;
+@use '@datareachable/webpack/Constant/color.scss' as *;
+
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+/** The demo mixin is ..........*/
+@mixin demo {}
+
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+/* <--------------------------- * SECTION1 * --------------------------- */
+.stepScript_container {
+    min-height: 60rem;
+    padding: 2.4rem 0 2.4rem 0;
+    border: 0.06rem solid $neutral_200;
+    border-radius: 1rem;
+
+    >h2 {
+        @include c_h_5();
+        color: $neutral_700;
+        margin-left: 1.6rem;
+    }
+}
+
+.stepScript_scriptInfo {
+    min-height: 100%;
+    padding: 2rem;
+    background-color: $bg;
+    border-radius: 1rem;
+}
+
+.stepScript_scriptInfo__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+        @include c_h_5;
+        color: $neutral_700;
+    }
+
+    >div {
+        display: flex;
+        align-items: center;
+        color: $primary_600;
+        cursor: pointer;
+
+        &:hover {
+            color: $primary_400;
+        }
+
+        .icon_wrap {
+            font-size: 1.05rem;
+        }
+
+        p {
+            @include c_body_3();
+            margin-left: 0.6rem;
+        }
+    }
+}
+
+.stepScript_tips {
+    @include c_body_3();
+    margin-top: 0.8rem;
+    margin-bottom: 2.4rem;
+    color: $neutral_400;
+
+    span {
+        @include c_h_7();
+        color: $neutral_500;
+    }
+}
+
+.stepScript_empty {
+    text-align: center;
+    margin-top: 4.8rem;
+
+    p {
+        @include c_body_3();
+        color: $neutral_300;
+    }
+}
+
+.stepScript_scriptInfo__isSelect {
+    .icon_wrap {
+        color: $neutral_300;
+    }
+
+    p {
+        color: $neutral_300;
+    }
+}
+
+/* <--------------------------- * SECTION1 * --------------------------- */

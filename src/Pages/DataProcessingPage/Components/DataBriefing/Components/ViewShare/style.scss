@@ -1,0 +1,81 @@
+/**
+* @file 
+* @date 2022-09-01
+* @author liaoli
+* @lastModify liaoli 2022-09-01
+*/
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+/** Import all the reference constant after this line */
+@use '@datareachable/webpack/Constant/breakPoint.scss' as *;
+@use '@datareachable/webpack/Constant/font.scss' as *;
+@use '@datareachable/webpack/Constant/color.scss' as *;
+
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+/** The demo mixin is ..........*/
+@mixin demo {}
+
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+/* <--------------------------- * SECTION1 * --------------------------- */
+.shareView_alert {
+    .shareView_container {
+
+        .shareView_title {
+            @include c_subtitle_4();
+            letter-spacing: 0.02rem;
+            color: $neutral_700;
+        }
+
+        .shareView_tips {
+            @include c_body_1();
+            margin-top: 0.8rem;
+            margin-bottom: 3.2rem;
+            color: $neutral_300;
+        }
+
+        .radio_wrap {
+            height: 2rem;
+            margin: 0;
+            margin-bottom: 1.6rem;
+        }
+
+        .shareView_checkBox {
+            margin-top: -0.3rem;
+            height: 2.8rem;
+
+            .check_wrap__solid {
+                height: 2.8rem;
+                margin-right: 2.4rem;
+                transition: .2s ease;
+
+                .check_icon_solid {
+                    transition: .2s ease;
+                }
+            }
+
+        }
+
+        .shareView_button {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 4.8rem;
+        }
+    }
+
+    .alert_container {
+        padding: 3.2rem 2.4rem 2.4rem 3.2rem;
+    }
+
+    .shareView_checkBox_hover {
+        .check_wrap__solid:hover {
+            border-color: $primary_400;
+
+            .check_icon_solid {
+                border-color: $primary_400;
+            }
+        }
+    }
+}
+
+/* <--------------------------- * SECTION1 * --------------------------- */

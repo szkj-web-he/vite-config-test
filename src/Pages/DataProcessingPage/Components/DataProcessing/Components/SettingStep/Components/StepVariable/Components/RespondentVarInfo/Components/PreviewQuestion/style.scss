@@ -1,0 +1,70 @@
+/**
+* @file 
+* @date 2022-11-24
+* @author liaoli
+* @lastModify liaoli 2022-11-24
+*/
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+/** Import all the reference constant after this line */
+@use '@datareachable/webpack/Constant/breakPoint.scss' as *;
+@use '@datareachable/webpack/Constant/font.scss' as *;
+@use '@datareachable/webpack/Constant/color.scss' as *;
+
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+/** The demo mixin is ..........*/
+@mixin demo {}
+
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+/* <--------------------------- * SECTION1 * --------------------------- */
+.previewQuestion_title {
+    @include c_h_5();
+    margin-bottom: 2rem;
+    color: $neutral_700;
+}
+
+.previewQuestion_tips,
+.previewQuestion_question {
+    @include c_h_7();
+    color: $neutral_500;
+}
+
+.previewQuestion_type {
+    @include c_body_3();
+    display: flex;
+    align-items: center;
+    margin-top: 1.2rem;
+    margin-bottom: 3.2rem;
+    color: $neutral_400;
+
+    .icon_wrap {
+        margin-right: 1rem;
+        font-size: 1.6rem;
+    }
+}
+
+.previewQuestion_preview {
+    margin-top: 1.2rem;
+    margin-bottom: 2.4rem;
+    height: 18rem;
+
+    .scroll_scrollBody {
+        padding-right: 1.6rem;
+    }
+}
+
+.previewQuestion_button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 6.4rem;
+    padding: 1.6rem 3.2rem;
+    border-top: 0.1rem solid $neutral_200;
+}
+
+/* <--------------------------- * SECTION1 * --------------------------- */
+.previewQuestion_alert {
+    .alert_container {
+        padding: 2.4rem 2.4rem 0 4rem;
+    }
+}

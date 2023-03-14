@@ -1,0 +1,735 @@
+{
+    "HomePage": {
+        "OrgAndFolderList": {
+            "ManageOrg": "管理组织",
+            "Personal": "个人组织",
+            "Preferred": "偏好组织",
+            "Prefer": "设为偏好组织",
+            "FolderList": {
+                "All": "全部",
+                "Starred": "星标",
+                "Project-related": "项目相关",
+                "Not Bound": "未绑定"
+            }
+        },
+        "Main": {
+            "ChangeDashboard": {
+                "Project Manager": "项目管理",
+                "Questionnaire Editor": "表单编辑",
+                "Questionnaire Distribution": "表单分发",
+                "Analysis & Report": "数据处理",
+                "Plug-In Editor": "插件编辑",
+                "Date Processing": "数据处理"
+            },
+            "RoleAndTalentGroup": {
+                "Client": "合同甲方",
+                "Supplier": "合同乙方",
+                "DefaultGroup": "默认部门"
+            },
+            "SearchDistribution": {
+                "Name": "名称",
+                "Project Name": "项目名称",
+                "Created Time": "创建时间",
+                "Modified Time": "修改时间",
+                "Keywords": "关键词",
+                "Placeholder": "搜索...",
+                "StartTime": "开始时间",
+                "EndTime": "结束时间"
+            },
+            "DistributionItem": {
+                "Created": "创建时间",
+                "Creator": "创建者",
+                "Name": "名称",
+                "Creation Date": "创建时间",
+                "Last Modified": "最近修改时间",
+                "NotBound": "未绑定",
+                "NoData": "没有数据",
+                "SelectProject": "你可以切换项目以展示绑定至该项目的表单分发",
+                "ProjectOwner": "项目所属组织"
+            }
+        },
+        "DistributionSlider": {
+            "Enter": "进入",
+            "DataProcessing Name": "数据处理",
+            "Organization": "项目发起组织",
+            "Keywords": "关键词",
+            "NoKeywords": "未添加关键词",
+            "RoleTips": "( 只有项目的管理者才能添加关键词 )",
+            "Bound Questionnaire": "已绑定表单",
+            "NoBound": "您还没有绑定任何表单",
+            "NotSelect": "请选中一个条目来展示项目细节",
+            "Open": "打开"
+        }
+    },
+    "DistributionWindow": {
+        "EnterDis": "进入数据处理",
+        "EnterDisMsg": "不同的角色可以做不同的合作工作。",
+        "DisNamePlaceholder": "请输入分发器名称...",
+        "BelongOrg": "所属组织",
+        "OrgNamePlaceholder": "请选择一个组织...",
+        "TGPlaceholder": "请选择一个部门...",
+        "RolePlaceholder": "请选择一个角色..."
+    },
+    "PreparationPage": {
+        "Preparation": "准备工作",
+        "DataProcessing": "数据处理",
+        "DataBrief": "数据简报",
+        "SwitchRole": "切换角色",
+        "SwitchRoleMsg": "通过切换不同角色来进行不同工作",
+        "OrgName": "组织名称",
+        "Organization": "组织",
+        "TalentGroup": "部门",
+        "Role": "角色",
+        "NoRoleMsg": "您没有任何角色可以选择。请检查并重试。",
+        "TargetInDataProcessing": "数据处理的目标",
+        "Targets": "目标",
+        "NoConditions": "还未输入任何要求",
+        "Attachments": "附件",
+        "NoAttachment": "还未添加任何附件",
+        "JobList": "工作列表",
+        "CreateJob": "创建工作",
+        "NoBindQue": "还未绑定任何表单",
+        "ArchivedJobPopover": "归档的工作",
+        "JobListPopover": "创建一个工作，并选择其数据源，以便对该数据源中的数据进行后续处理工作",
+        "ConditionsPopover": "请通过文本输入和上传附件的方式描述您的数据处理目标",
+        "TaskGiverPopover": "请切换成可编辑的角色才可以进入收集器详情",
+        "NoDistributorPopover": "您还未创建任何收集器，请先在收集器列表中创建收集器",
+        "EditConditions": {
+            "Title": "添加目标",
+            "Message": "为数据处理添加处理目标",
+            "Placeholder": "Add your goals here..."
+        },
+        "UploadAttachment": {
+            "Title": "附件",
+            "Message": "上传数据处理相关附件",
+            "UploadTip": "拖动或浏览要上传的文件到这里",
+            "LinkMsg": "浏览",
+            "UploadFiles": "上传文件"
+        },
+        "BindModel": {
+            "Title": "绑定表单",
+            "Tips": "请选择以下表单",
+            "Questionnaires": "表单名称",
+            "NoData": "无表单类型的可交付物数据",
+            "Version": "版本号",
+            "Time": "最后修改时间"
+        },
+        "QuestionnaireInfoModel": {
+            "Title": "表单信息",
+            "QueName": "表单名称",
+            "Version": "版本号",
+            "BelongPro": "所属项目",
+            "BelongOrg": "所属组织",
+            "FreezeMsg": "点击锁按钮以冻结表单",
+            "UnfreezeMsg": "点击锁按钮以解冻表单"
+        },
+        "FreezeAndUnFreezeModel": {
+            "FTitle": "冻结已绑定表单？",
+            "UTitle": "解冻已绑定表单？",
+            "FConfirmMsg": "请确定您想要冻结此已绑定表单",
+            "UConfirmMsg": "请确定您想要解冻此已绑定表单",
+            "FTips": "一旦您冻结此表单，受访者就不能够访问或者填写表单。",
+            "UTips": "一旦您解冻此表单，该表单的数据就能够正常收集。",
+            "FMessage": "冻结表单信息：",
+            "UMessage": "解冻表单信息：",
+            "FDefaultMsg": "很抱歉，由于某些原因，我们不得不冻结表单。这样会导致受访者无法看到表单。",
+            "UDefaultMsg": "表单将被解冻，受访者可以正常访问表单。",
+            "FPopoverMsg": "请编写一些告知冻结表单的信息内容，表明冻结表单的原因",
+            "UPopoverMsg": "请编写一些告知解冻表单的信息内容。"
+        }
+    },
+    "DistributorListPage": {
+        "Unfreezed": "未冻结的表单",
+        "Freezed": "已冻结的表单",
+        "ArchivedDisBtn": "归档的收集器",
+        "Type": "类型",
+        "Name": "名称/创建时间",
+        "OpenLinkStatus": "开放链接状态",
+        "LastModify": "最后修改时间",
+        "EnterDisDetail": "进入收集器",
+        "All": "所有",
+        "Owned": "本组织",
+        "Copy": "复制测试链接",
+        "Open": "公开",
+        "Closed": "关闭",
+        "EmptyDistributors": "你还没有创建任何收集器",
+        "CreateDis": {
+            "Title": "添加收集器",
+            "Response": "针对性回复",
+            "ResponseMsg": "找符合条件的人",
+            "WebLink": "网页链接",
+            "WebLinkMsg": "通过复制粘贴链接到邮件、社交媒体进行分享",
+            "Email": "邮箱",
+            "EmailMsg": "通过邮箱分享更好地跟踪调研受访者",
+            "Social": "社交媒体",
+            "SocialMsg": "将你的调查表单发送到推特和脸书",
+            "Website": "网页",
+            "WebsiteMsg": "将你的调查发布在网站上",
+            "CreateDis": "创建收集器",
+            "DisName": "收集器名称",
+            "UsedName": "收集器名称已被使用",
+            "DisNameMsg": "在此输入收集器名称",
+            "ChooseQue": "表单",
+            "ChooseQueMsg": "选择一个表单...",
+            "VersionMsg": "表单版本"
+        },
+        "MoreDropDown": {
+            "Details": "详情",
+            "CloseLink": "关闭开放链接",
+            "OpenLink": "开启开放链接",
+            "Archive": "归档收集器"
+        },
+        "DisStatusModel": {
+            "CTitle": "关闭开放链接",
+            "CConfirmMsg": "请确定你想要关闭这个收集器？",
+            "CTips": "一旦你关闭了收集器，人们就不能访问或接受调查。 但是你可以随时再公开它。",
+            "CLightTips": "( 关闭这个收集器不会影响到你正在使用的其他收集器 )",
+            "CMessage": "关闭链接信息:",
+            "CDefaultMsg": "本次调查目前已结束。 请联系该表单的作者，以获得进一步的帮助。 ",
+            "OTitle": "公开开放链接",
+            "OConfirmMsg": "请确定你要公开这个收集器？",
+            "OTips": "一旦公开了收集器，其他人就可访问你的表单并填写答卷。",
+            "OLightTips": "(你可以在重新公开收集器之前重置设置。)"
+        },
+        "ArchivedModel": {
+            "Title": "归档收集器？",
+            "Confirm": "请确定你想要归档收集器",
+            "WarningMsg": "一旦你关闭了收集器，被访者将无法访问表单。",
+            "Tips": "如若进行此操作，请先关闭收集器，包括开放链接/测试链接/手动回复链接。",
+            "Open": "公开",
+            "Closed": "关闭",
+            "CloseMsg": "收集器归档后的展示信息：",
+            "CloseTips": "一旦开放链接/测试链接/手动回复链接关闭，被访者将无法访问表单，同时将会看到以下提示信息。",
+            "CloseDefaultMsg": "本次调查目前已结束。 请联系该表单的作者，以获得进一步的帮助。"
+        },
+        "ArchivedList": {
+            "Title": "归档的收集器",
+            "SearchMsg": "可用收集器名称进行搜索...",
+            "Loading": "加载中",
+            "Restore": "恢复",
+            "End": "没有了",
+            "NoData": "没有数据"
+        }
+    },
+    "DistributorDetailPage": {
+        "Catalogue": "目录",
+        "SearchDisPlaceholder": "根据收集器名称进行搜索",
+        "EmptySurvey": "没有数据",
+        "EmptyBoundSurvey": "无绑定的表单",
+        "EmptyDistributors": "你还没有创建任何收集器，请返回上一页创建收集器",
+        "OpenLink": "公开链接",
+        "CloseLink": "关闭链接",
+        "Customize": "自定义链接",
+        "CopyLink": "复制链接",
+        "SetMore": "更多设置",
+        "Key Metrics": "表单关键指标",
+        "General Setting": "常规设置",
+        "Redirection Setting": "重定向设置",
+        "Widget Setting": "微件设置",
+        "EditDisName": "编辑收集器名称",
+        "DisName": "收集器名称",
+        "KeyMetrics": {
+            "Title": "重要指标",
+            "Message": "您可以在这里查看目前表单回答情况的统计数据。",
+            "ForOpenLink": "(开放链接)",
+            "LastResponse": "最后回复时间",
+            "ClickThrough": "点击次数",
+            "Dropouts": "中途退出数量",
+            "Completes": "完成数量",
+            "ParticipateRate": "参与度",
+            "IncidenceRate": "超额完成率",
+            "QualificationRate": "有效完成度",
+            "DropoutRate": "中途退出率",
+            "LastResponseTips": "最后一个被调查者提交调查的日期",
+            "ClickThroughTips": "进入调查的受访者人数",
+            "DropoutsTips": "中途退出调查受访者人数",
+            "CompletesTips": "满足要求并完成调查的总人数",
+            "ParticipateRateTips": "参与过表单人数和点击人数百分率",
+            "IncidenceRateTips": "合格或者超额完成百分率",
+            "QualificationRateTips": "合格完成人数占参加表单人数百分率",
+            "DropoutRateTips": "未完成表单参与者百分率"
+        },
+        "Setting": {
+            "Title": "常规设置",
+            "Message": "您可以在这里对这个链接进行一些基础设置。",
+            "Date": "此链接可以在以下时间内被访问",
+            "To": "至",
+            "Access": "此链接可以被访问",
+            "Times": "次",
+            "ErrorMsg": "在调查中断时，显示以下错误提示信息",
+            "ErrorMsgPlaceholder": "这是一条错误提示信息。",
+            "Display": "更换表单中展示的组织名和头像",
+            "Edit": "编辑",
+            "EditCloseMsg": "编辑表单关闭信息",
+            "DataPopover": "您可以设置自动停止收集回复的截止日期。如果截止日期到了，调查就会结束。当您打开调查时，受访者会看到您写的结束信息。",
+            "AccessPopover": "您可以限制该链接可访问的次数。当达到上限时，受访者将看到您打开调查时所写的提示信息。",
+            "ErrorMsgPopover": "当调查中断时，添加要显示的错误消息。如果您没有添加错误信息，受访者将看到我们的默认信息。",
+            "DisplayPopover": "设置表单中显示的公司名称和logo，让受访者了解贵公司。",
+            "CloseMsgTitle": "编辑调查关闭信息",
+            "CloseMsg": "关闭表单信息：",
+            "DefaultMsg": "本次调查目前已结束。 请联系该表单的作者，以获得进一步的帮助。",
+            "EditOrg": "编辑信息",
+            "OrgName": "组织名称",
+            "OrgLogo": "组织LOGO"
+        },
+        "RedirectionSetting": {
+            "Title": "重定向设置",
+            "Message": "您可以在这里设置完成表单后的重定向链接。",
+            "Uid": "可设置重定向系统中<i>“uid”</i>参数",
+            "Quotafull": "可设置<strong>配额已满</strong>时的重定向链接",
+            "Screenout": "可设置受访者<strong>不符合条件限制</strong>时的重定向链接",
+            "Complete": "可设置<strong>表单完成</strong>时的重定向链接",
+            "AddArg": "手动添加参数",
+            "UidPlaceholder": "请输入参数...",
+            "LinkPlaceholder": "请输入重定向链接...",
+            "UidPopover": "受访者身份的参数在我们的系统中称为“uid”，将被转换为您在您的重定向网站中输入的受访者身份的参数。",
+            "QuotafullPopover": "一旦调查配额完成，我们将重定向到您设置的这条链接。",
+            "ScreenoutPopover": "一旦最终调查没有完成，我们将重定向到您设置的这条链接。",
+            "CompletePopover": "一旦最终调查完成，我们将重定向到您设置的这条链接。"
+        },
+        "WidgetSetting": {
+            "Title": "微件设置",
+            "Message": "您可以在这里选择并设置在表单中展示的微件。",
+            "QueName": "在表单中展示该表单的名称",
+            "Progress": "在表单中展示受访者当前答题的进度",
+            "ProgressError": "请输入有效的问题总数或范围",
+            "Score": "在表单中展示受访者当前答题的得分",
+            "EachQuestion": "每个题",
+            "ScoreText": "分",
+            "PrivacyPolicy": "在表单中展示数据采集相关的隐私条款",
+            "PolicyText": "以文本形式展示隐私条款",
+            "PolicyLink": "设置重定向链接，允许受访者直接进入您的隐私条款网页",
+            "SetAward": "设置受访者将得到的奖励",
+            "Question": "个问题",
+            "Award": "奖励",
+            "Checkout": "进入结算",
+            "TermConditions": "在表单中展示该表单的条款和条件",
+            "Url": "在表单中展示由自定义链接设置的URL参数捕获的变量值",
+            "Edit": "编辑",
+            "ProgressPlaceholder": "请输入问题总数... 例如，10或者10~100 ",
+            "ScorePlaceholder": "输入数字",
+            "LinkPlaceholder": "请输入链接...",
+            "QueNamePopover": "启用这个小部件后，当受访者单击此小部件时，将显示受访者正在填写的表单的名称。",
+            "ProgressPopover": "启用这个小部件后，当受访者单击此小部件时，将展示受访者当前答题数量以及总题数。",
+            "ScorePopover": "启用这个小部件后，当受访者单击此小部件时，将根据当前回答的数量显示当前得分。",
+            "PolicyPopover": "启用这个小部件后，当受访者单击此小部件时，将允许受访者查看当前表单的隐私条款。",
+            "AwardPopover": "启用这个小部件后，当受访者单击此小部件时，将展示受访者当前获得的奖励。",
+            "TermsPopover": "启用这个小部件后，当受访者单击此小部件时，将允许受访者查看当前表单的条件与限制。",
+            "UrlPopover": "启用这个微件后，测试链接显示捕获的URL参数和在Distribution中设置的URL参数。"
+        },
+        "ManualSetting": {
+            "Title": "手动添加回复",
+            "Message": "这里用于手动输入表单答案。 例如，您需要输入从纸质调查表单中收集的一些回答，或者您需要在调查表单结束后添加回答。",
+            "Empty": "您还未添加任何答卷回复",
+            "AddResponse": "添加样本",
+            "Order": "序号",
+            "All types": "所有类型",
+            "CreatedTime": "回复开始时间",
+            "ModifiedTime": "回复修改时间",
+            "Status": "答卷状态",
+            "Completed": "已完成",
+            "Started": "已开始",
+            "Drop Out": "已退出",
+            "Quotafull": "配额已满",
+            "Screen Out": "筛选出",
+            "Edit": "编辑",
+            "Delete": "删除",
+            "DeleteSure": "是否删除回复?",
+            "DeleteSureMsg": "是否确实要删除此回复？"
+        },
+        "SetLinkParams": {
+            "CustomizeLink": "自定义链接",
+            "RedirectionLink": "自定义重定向链接",
+            "SetRequiredArg": "设置必填参数",
+            "Supplier": "您可以选择增加参数，来代表供应方名称",
+            "RespondentId": "您可以选择增加参数，来代表受访者身份标识",
+            "Argument": "请在此处自定义链接的参数",
+            "AllArgPlaceholder": "请点击输入...",
+            "Key": "键",
+            "KeyInputPlaceholder": "请输入",
+            "Choose": "请选择",
+            "Value": "值",
+            "ValueTips": "（由第三方生成）",
+            "Generate": "生成参数",
+            "KeyRepeat": "字段不能重复",
+            "ValuePopover": "自定义重定向链接中的值由用户填写。",
+            "Input": "输入",
+            "Output": "输出",
+            "AddKey": "添加新键",
+            "RequiredArg": "必填参数",
+            "SetRequiredArgTips": "这是参数必填项设置"
+        },
+        "EditText": {
+            "TermsTitle": "编辑条款和条件",
+            "TermsTips": "编辑您想要给您的受访者看到的内容",
+            "PolicyTitle": "编辑隐私条款",
+            "PolicyTips": "以您自己的方式编辑隐私条款"
+        }
+    },
+    "Common": {
+        "DefaultGroup": "默认部门",
+        "DataProcessingName": "数据处理名称",
+        "OrganizationName": "组织名称",
+        "TalentGroup": "部门名称",
+        "Role": "角色",
+        "CopyUrl": "复制 URL",
+        "Cancel": "取消",
+        "Confirm": "确定",
+        "Create": "创建",
+        "Preview": "预览",
+        "Save": "保存",
+        "Enter": "进入",
+        "Previous": "上一页",
+        "Next": "下一页",
+        "task_giver": "可分配任务",
+        "writer": "可编辑",
+        "commenter": "可评论",
+        "Reader": "可阅读",
+        "Back": "返回",
+        "Open": "公开",
+        "Closed": "关闭",
+        "Close": "关闭",
+        "Open Link": "开放链接",
+        "Test Link": "测试链接",
+        "Manual Link": "手动回复链接",
+        "Creator": "创建者",
+        "CreateTime": "创建时间",
+        "BelongTo": "所属组织"
+    },
+    "Notice": {
+        "Success": "成功",
+        "Warning": "警告",
+        "Error": "错误",
+        "Info": "信息",
+        "Project": {
+            "GetOrgProjs": {
+                "400003": "组织中未找到该项目",
+                "401001": "权限鉴定失败，请重试",
+                "400100": "获取信息失败，请重试",
+                "403103": "项目已被归档，请重试",
+                "401100": "请登录后重试",
+                "500100": "发生未知错误，请重试"
+            }
+        },
+        "Distribution": {
+            "GetList": {
+                "403001": "获取部门信息失败，请重试",
+                "400001": "获取组织信息失败，请重试"
+            },
+            "GetCount": {
+                "400001": "获取组织及部门信息失败，请重试",
+                "400002": "获取组织及部门信息失败，请重试",
+                "403001": "获取部门信息失败，请重试"
+            },
+            "PutStarred": {
+                "200001": "标星成功",
+                "200002": "取消标星成功"
+            },
+            "GetKeyword": {
+                "400001": "获取组织信息失败，请重试"
+            },
+            "PutKeyword": {
+                "200001": "关键词保存成功",
+                "400001": "关键词保存失败，请重试"
+            },
+            "GetUnbound": {
+                "400001": "获取分发器信息失败，请重试"
+            },
+            "PutBind": {
+                "400001": "获取分发器信息失败，请重试",
+                "400002": "获取组织信息失败，请重试",
+                "200001": "绑定成功",
+                "200002": "表单已绑定"
+            },
+            "GetSurvey": {
+                "400001": "获取组织信息失败，请重试"
+            },
+            "GetAllSurveyVersion": {
+                "400001": "获取分发器信息失败，请重试"
+            },
+            "PutSurveyFreeze": {
+                "200001_T": "表单冻结成功",
+                "200001_F": "表单解冻成功"
+            },
+            "GetVersionForOneSurvey": {
+                "400001": "获取分发器信息失败，请重试"
+            },
+            "GetRecruitment": {
+                "400001": "获取分发器信息失败，请重试"
+            },
+            "PutRecruitment": {
+                "200001": "样本要求保存成功",
+                "400001": "样本要求保存失败，请重试"
+            }
+        },
+        "Distributor": {
+            "PostDistributor": {
+                "400001": "获取表单信息失败，请重试",
+                "400002": "获取表单信息失败，请重试",
+                "400003": "收集器名称不得重复，请重试",
+                "400004": "获取组织信息失败，请重试",
+                "200001": "收集器创建成功"
+            },
+            "GetDistributorInfo": {
+                "400001": "获取收集器信息失败，请重试",
+                "400002": "获取表单信息失败，请重试"
+            },
+            "GetDistributors": {
+                "403001": "该角色无权限进行此操作，请重试",
+                "400001": "获取组织信息失败，请重试"
+            },
+            "GetAssociateForDisName": {
+                "400001": "获取组织信息失败，请重试"
+            },
+            "SearchDistributor": {
+                "400001": "获取组织信息失败，请重试"
+            },
+            "GetDistributorInfoSearchGet": {
+                "400001": "获取组织信息失败，请重试",
+                "400002": ""
+            },
+            "CheckDistributorName": {
+                "400001": "获取收集器信息失败，请重试"
+            },
+            "PutDistributorName": {
+                "400001": "收集器名称不得重复，请重试",
+                "200001": "收集器名称保存成功"
+            },
+            "PostArchived": {
+                "200001_T": "收集器归档成功",
+                "200001_F": "收集器恢复成功"
+            },
+            "GetArchivedList": {
+                "400001": "获取组织信息失败，请重试"
+            },
+            "PutSetDisplay": {
+                "400001": "请确认组织名称及头像有效后重试",
+                "200001": "设置保存成功"
+            },
+            "GetSetDisplay": {
+                "400001": "获取收集器信息失败，请重试"
+            }
+        },
+        "Widget": {
+            "PutWidget": {
+                "400002": "测试微件只可用于测试链接",
+                "400001": "请确认微件设置完成后重试",
+                "400003": "请确认微件设置完成后重试",
+                "200001": "微件设置保存成功",
+                "200002": "微件设置保存成功"
+            },
+            "GetWidget": {
+                "400001": "获取收集器信息失败，请重试"
+            }
+        },
+        "DistributorLink": {
+            "GetLink": {
+                "400001": "获取链接信息失败，请重试"
+            },
+            "PutLinkStatus": {
+                "200001": "链接状态保存成功"
+            },
+            "PutLinkSetting": {
+                "400004": "获取链接信息失败，请重试",
+                "400001": "时间设置失败，请重试",
+                "200001": "链接设置保存成功"
+            },
+            "PutAccessMsg": {
+                "200001": "保存成功"
+            },
+            "PutDateMsg": {
+                "200001": "保存成功"
+            },
+            "PutCustomize": {
+                "400001": "链接参数不得重复，请重试",
+                "400002": "获取链接信息失败，请重试",
+                "400003": "参数取消失败，请重试",
+                "400004": "参数修改失败，请重试",
+                "200001": "自定义链接配置保存成功"
+            },
+            "GetCustomizeArg": {
+                "400001": "获取链接信息失败，请重试"
+            },
+            "PutRedirect": {
+                "400001": "获取重定向设置信息失败，请重试",
+                "200001": "重定向链接设置成功"
+            },
+            "PutRedirectArg": {
+                "400001": "键不得重复，请重试",
+                "200001": "自定义参数保存成功"
+            },
+            "GetMetrics": {
+                "400001": "获取表单关键指标失败，请重试"
+            }
+        },
+        "Organization": {
+            "GetAllOrg": {
+                "400100": "获取用户信息失败，请重试",
+                "403100": "当前用户未登录，请登录后重试",
+                "500100": "获取用户信息时发生未知错误，请重试"
+            },
+            "GetOrgInfo": {
+                "400100": "获取组织信息失败，请重试",
+                "500100": "获取组织信息时发生未知错误，请重试"
+            },
+            "GetAllTalentGroup": {
+                "400100": "获取部门失败，请重试",
+                "500100": "获取部门时发生未知错误，请重试"
+            },
+            "GetUserInfo": {
+                "403101": "获取用户登录信息失败，请重新登录",
+                "500100": "获取用户信息时发生未知错误，请重试"
+            },
+            "GetTGForOrg": {
+                "400100": "获取用户信息失败，请重试",
+                "403100": "当前用户未登录，请登录后重试",
+                "500100": "获取用户信息时发生未知错误，请重试"
+            }
+        },
+        "CommonCode": {
+            "401100": "请登录后再进行操作",
+            "400200": "获取验证信息失败，请重试",
+            "403200": "该角色无权限进行此操作，请重试",
+            "400401": "获取分发器失败，请重试",
+            "400402": "获取收集器信息失败，请重试",
+            "400404": "获取用户信息失败，请重试",
+            "400403": "获取收集器信息失败，请重试",
+            "400301": "获取组织信息失败，请重试",
+            "400302": "当前组织不是收集器的创建组织，请重试",
+            "403100": "当前用户不属于该部门，请重试",
+            "400100": "获取信息失败，请重试",
+            "400210": "获取组织及部门信息失败，请重试",
+            "400220": "获取交付物信息失败，请重试",
+            "403220": "获取用户信息失败，请重试",
+            "500100": "发生未知错误，请重试"
+        },
+        "CustomizeMsg": {
+            "ErrorNetwork": "当前网络连接不稳定，请检查你的网络后重试",
+            "CopyUrl": "链接复制成功",
+            "EditResponse": "保存回复成功",
+            "AddResponse": "添加新回复成功",
+            "ValueEmpty": "搜索失败，请重试",
+            "TimeEmpty": "搜索失败，请重试",
+            "KeyValueAlready": "添加参数失败，请重试",
+            "OrgLogoTypeError": "上传失败，请重试",
+            "OrgNameEmpty": "组织名称不得为空，请重试",
+            "InputNotUrl": "链接格式有误，请重试",
+            "ValueRepeated": "参数已存在，请重试",
+            "CopyLink": "链接复制成功",
+            "CodeSession": "验证码错误，请重试",
+            "LanguageError": "获取当前语言失败"
+        },
+        "DataProcessing": {
+            "GetList": {
+                "400001": "获取组织及部门信息失败，请重试"
+            },
+            "GetNotBoundList": {
+                "400200": "获取组织及部门信息失败，请重试"
+            },
+            "GetCount": {
+                "400001": "获取组织及部门信息失败，请重试",
+                "400002": "获取组织及部门信息失败，请重试"
+            },
+            "UpdateStarred": {
+                "200001": "标星成功",
+                "200002": "取消标星成功"
+            },
+            "Keywords": {
+                "400001": "保存关键词失败，请重试"
+            }
+        },
+        "JobList": {
+            "CreateJob": {
+                "200001": "创建成功",
+                "400001": "获取表单版本信息失败，请重试",
+                "400002": "请检查数据处理工作状态后重试",
+                "400003": "名称已重复，请重试"
+            },
+            "GetJobs": {
+                "400230": "获取交付物信息失败，请重试",
+                "403230": "当前角色无法进行此操作"
+            },
+            "UpdateJob": {
+                "400001": "请检查数据处理工作状态后重试"
+            },
+            "ArchiveJob": {
+                "400001": "请检查数据处理工作状态后重试"
+            },
+            "ExportJob": {
+                "404001": "暂无可导出文件，请稍后重试"
+            },
+            "RefreshJob": {
+                "400001": "请检查数据处理工作状态后重试"
+            },
+            "SurveyList": {
+                "400001": "获取交付物信息失败，请重试",
+                "400200": "获取组织及部门信息失败，请重试"
+            },
+            "QuestionAndVal": {
+                "400001": "请检查数据处理工作状态后重试"
+            }
+        },
+        "Attachment": {
+            "Upload": {
+                "400001": "获取组织及部门信息失败，请重试",
+                "400002": "获取附件信息失败，请重试"
+            },
+            "Download": {
+                "400001": "获取附件信息失败，请重试"
+            },
+            "Rename": {
+                "400001": "附件名称不可重复，请重试"
+            }
+        },
+        "View": {
+            "ViewInfo": {
+                "400001": "获取视角信息失败，请重试"
+            },
+            "CreateView": {
+                "400001": "视角名称不可重复，请重试"
+            },
+            "ViewReName": {
+                "400001": "视角名称不可重复，请重试"
+            },
+            "ShareView": {
+                "400001": "获取视角信息失败，请重试",
+                "400002": "获取交付物信息失败，请重试",
+                "401001": "获取分享信息失败，请重试",
+                "403001": "获取用户信息失败，请重试"
+            }
+        },
+        "Stage": {
+            "StageConfig": {
+                "400001": "请检查数据处理工作状态后重试"
+            }
+        }
+    },
+    "Textarea": {
+        "Font Size": "字体大小",
+        "Bold": "字体加粗",
+        "Italic": "斜体",
+        "Underline": "下划线",
+        "Crossline": "中划线",
+        "Font Color": "字体颜色",
+        "Filled": "填充颜色",
+        "Align Left": "左对齐",
+        "Align Center": "居中对齐",
+        "Align Right": "右对齐",
+        "Copy": "复制",
+        "Xsmall": "XS",
+        "Small": "S",
+        "Middile": "M",
+        "Large": "L",
+        "Xlarge": "XL",
+        "Default": "默认",
+        "Gray": "灰色",
+        "Red": "红色",
+        "Orange": "橙色",
+        "Yellow": "黄色",
+        "Green": "绿色",
+        "Blue": "蓝色",
+        "Purple": "紫色",
+        "Customize": "自定义",
+        "CopySuccess": "复制成功"
+    }
+}

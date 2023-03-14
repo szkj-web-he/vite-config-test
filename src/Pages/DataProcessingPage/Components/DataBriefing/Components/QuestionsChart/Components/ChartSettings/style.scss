@@ -1,0 +1,407 @@
+/**
+* @file
+* @date 2022-09-02
+* @author liaoli
+* @lastModify liaoli 2022-09-02
+*/
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+/** Import all the reference constant after this line */
+@use '@datareachable/webpack/Constant/breakPoint.scss' as *;
+@use '@datareachable/webpack/Constant/font.scss' as *;
+@use '@datareachable/webpack/Constant/color.scss' as *;
+
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+/** The demo mixin is ..........*/
+@mixin demo {}
+
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+/* <--------------------------- * SECTION1 * --------------------------- */
+.chartSettings_alert {
+    .dropDownListV2_container:focus {
+        border-color: $primary_600 !important;
+    }
+
+    .chartSettings_container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+
+        .chartSettings {
+            padding: 0 3.2rem;
+
+        }
+
+        .chartSettings_title {
+            @include c_h_4();
+            margin-left: 3.2rem;
+            margin-bottom: 0.8rem;
+            color: $neutral_700;
+        }
+
+        .chartSettings_tips {
+            @include c_body_3();
+            margin-left: 3.2rem;
+            margin-bottom: 2.9rem;
+            color: $neutral_300;
+        }
+
+        .chartSettings_option {
+            @include c_h_6();
+            color: $neutral_600;
+            margin-top: 1.6rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .chartSettings_optionContent {
+            list-style: none;
+
+            >li {
+                margin-bottom: 1.2rem;
+
+                >p {
+                    @include c_h_7();
+                    color: $neutral_600;
+                    margin-bottom: 0.4rem;
+                }
+
+                >div {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 4rem;
+
+                    .dropDownListV2_placeholder {
+                        @include c_body_3();
+                        color: $neutral_300;
+                    }
+
+                    >.resetInput_container {
+                        border-color: $neutral_200;
+
+                        .resetInput_input {
+                            &::placeholder {
+                                @include c_body_3();
+                                color: $neutral_300;
+                            }
+                        }
+
+                    }
+
+                    >.icon_wrap {
+                        box-sizing: content-box;
+                        width: 1.6rem;
+                        height: 1.6rem;
+                        padding: 1rem;
+                        color: $primary_500;
+                        box-shadow: $shadow_small;
+                        border-radius: 0.8rem;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .chartSettings_yAxis {
+            display: flex;
+
+            >div {
+                width: 100%;
+            }
+
+            >div:nth-of-type(1) {
+                margin-right: 1.6rem;
+            }
+        }
+
+        .editTitle_input {
+            width: 100%;
+            border: 0.1rem solid $neutral_200;
+            border-radius: 0.6rem;
+        }
+
+        .chartSettings_range {
+            display: flex;
+
+            >div:nth-of-type(1) {
+                margin-right: 1.6rem;
+            }
+
+            .resetInput_container {
+                border-color: $neutral_200;
+            }
+        }
+    }
+
+    .chartSettings_showValue {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10.8rem;
+
+        .chartSettings_option {
+            font-weight: 700;
+        }
+    }
+
+    .chartSettings_changeChartType {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 4rem;
+        padding: 0 1.6rem;
+        border: 0.1rem solid $neutral_200;
+        border-radius: 0.6rem;
+
+        >div {
+            display: flex;
+            align-items: center;
+
+            .columnChart_icon {
+                width: 1.4rem;
+                height: 1.4rem;
+                margin-right: 0.6rem;
+                color: $primary_600;
+            }
+
+            >p {
+                @include c_body_3();
+                color: $neutral_500;
+            }
+
+        }
+
+        .changeChart_icon {
+            width: 1.6rem;
+            height: 1.6rem;
+            transform: rotate(0);
+            transition: all 0.2s ease;
+        }
+    }
+
+    .chartSettings_button {
+        flex-shrink: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 6.4rem;
+        padding-right: 3.2rem;
+        box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.08);
+    }
+
+    .chartSettings_scroll {
+        width: 100%;
+        height: calc(100% - 6.4rem);
+        padding-right: 0.8rem;
+
+        .scroll_scrollContainer {
+            height: calc(100% - 10rem);
+        }
+    }
+
+    .alert_container {
+        padding: 0;
+        padding-top: 3.2rem;
+    }
+}
+
+.isSelect_type {
+
+    svg,
+    p {
+        color: $primary_600 !important;
+    }
+}
+
+/* <--------------------------- * SECTION1 * --------------------------- */
+
+.switchColors_popover {
+    .popover_body {
+        @include c_body_3();
+        padding: 0.8rem 1.2rem;
+        width: 10.8rem;
+        height: auto;
+    }
+}
+
+.chartSettings_dropDownList {
+    .scroll_scrollContainer {
+        box-sizing: border-box;
+        min-width: 18rem;
+        max-height: 15.2rem !important;
+        padding: 0.8rem 0.4rem 1.2rem 0.4rem;
+        box-shadow: $shadow_regular;
+    }
+
+    .scroll_scrollBody {
+        box-sizing: border-box;
+        max-height: 15.2rem;
+
+        ul {
+            li {
+                margin-bottom: 0.8rem;
+                padding: 0.4rem 0.8rem;
+
+                &:hover {
+                    background-color: $primary_50;
+                }
+
+                .dropDownListV2_labelContent {
+                    @include c_body_3();
+                    padding: 0;
+                    height: 2rem;
+                    color: $neutral_400 !important;
+                }
+            }
+        }
+    }
+}
+
+.chartSettings_color {
+
+    .kite_body {
+        background-color: #fff;
+        box-shadow: $shadow_small;
+        border-radius: 0.6rem;
+        padding: 1.2rem 0.4rem;
+    }
+
+    ul {
+        list-style: none;
+        width: 12rem;
+        height: 30.4rem;
+
+
+        li {
+            display: flex;
+            align-items: center;
+            width: 11.2rem;
+            height: 2.8rem;
+            padding: 0.4rem 0.9rem;
+            margin-bottom: 0.8rem;
+            border-radius: 0.4rem;
+            cursor: pointer;
+
+            .icon_wrap {
+                width: 1.4rem;
+                height: 1.4rem;
+                margin-right: 1.3rem;
+            }
+
+            >p {
+                @include c_body_3();
+            }
+
+            &:hover {
+                background-color: $primary_50;
+            }
+        }
+    }
+}
+
+.chartSettings_yAxisFloating {
+    .scroll_scrollBody {
+        width: 36rem;
+        padding: 0.8rem 0.4rem;
+        box-shadow: $shadow_regular;
+    }
+
+    ul {
+        >li {
+            margin-top: 0.8rem;
+
+            >div {
+                @include c_body_3();
+                padding: 0.4rem 0.8rem;
+                color: $neutral_400;
+            }
+
+            &:hover {
+                background-color: $primary_50;
+            }
+        }
+
+        >li:nth-of-type(1) {
+            margin-top: 0;
+        }
+    }
+}
+
+.chartSettings_chartGroup__kite {
+    .chart_chartGroup {
+        list-style: none;
+        width: 36.8rem;
+        padding: 0.8rem 0.4rem;
+        background-color: #fff;
+        box-shadow: $shadow_regular;
+        border-radius: 0.6rem;
+
+        >li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0.8rem 0;
+            padding: 0.4rem 1rem;
+            border-radius: 0.4rem;
+
+            >div {
+                display: flex;
+                align-items: center;
+
+                .icon_wrap {
+                    width: 1.3rem;
+                    height: 1.3rem;
+                    color: $neutral_400;
+                }
+
+                >p {
+                    @include c_body_3();
+                    margin-left: 0.7rem;
+                    color: $neutral_400;
+                }
+            }
+
+            >.icon_wrap {
+                color: $neutral_400;
+            }
+
+            &:hover {
+                background-color: $primary_50;
+            }
+        }
+    }
+}
+
+.chartSettings_chartType__kite {
+    .chart_chartType {
+        list-style: none;
+        width: 36.3rem;
+        padding: 0.8rem 0.4rem;
+        background-color: #fff;
+        box-shadow: $shadow_regular;
+        border-radius: 0.6rem;
+
+        >li {
+            @include c_body_3();
+            margin: 0.8rem 0;
+            padding: 0.4rem 0.8rem;
+            color: $neutral_400;
+            border-radius: 0.4rem;
+
+            &:hover {
+                background-color: $primary_50;
+            }
+        }
+    }
+}
+
+.chart_chartType__notSelect {
+    color: $neutral_300 !important;
+    cursor: not-allowed !important;
+
+    &:hover {
+        background-color: #fff !important;
+    }
+}

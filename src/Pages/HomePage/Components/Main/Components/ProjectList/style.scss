@@ -1,0 +1,149 @@
+/**
+* @file 
+* @date 2021-08-06
+* @author zhoubin 
+* @lastModify zhoubin  2021-08-06
+*/
+
+
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+
+
+/** Import all the reference constant after this line */
+
+@import "~/Constant/breakPoint.scss";
+@import "~/Constant/font.scss";
+@import "~/Constant/color.scss";
+
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+
+
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+
+
+/** The demo mixin is ..........*/
+
+@mixin demo {}
+
+
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+
+
+/* <--------------------------- * SECTION1 * --------------------------- */
+
+.projectList_projects {
+    position: relative;
+    margin-top: 1.8rem;
+}
+
+.projectList_selectProject {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    >div:first-child {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.projectList_selectProjectInfo {
+    display: flex;
+    align-items: center;
+    height: 3.5rem;
+    margin-right: 0.8rem;
+    padding: 0 0.8rem;
+    border: 0.1rem solid transparent;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    user-select: none;
+    &:hover {
+        border: 0.1rem solid $neutral_300;
+    }
+    &:focus {
+        border: 0.1rem solid $primary_600;
+    }
+    >div {
+        display: flex;
+        align-items: center;
+        svg {
+            font-size: 1.2rem;
+        }
+        transition: 0.1s linear;
+    }
+    >span {
+        margin-left: 1.5rem;
+        font: $fs_r_16;
+    }
+}
+
+.projectList_selectProjectOrganization {
+    display: flex;
+    align-items: center;
+    >span {
+        font: $fs_r_16;
+        &:first-child {
+            margin-right: 0.5rem;
+            color: $gray_2;
+        }
+        &:last-child {
+            margin-left: 0.5rem;
+            color: $line_dark;
+        }
+    }
+}
+
+.projectList_selectProjectList {
+    position: absolute;
+    top: 100%;
+    width: 44.8rem;
+    margin-top: 0.7rem;
+    padding: 1.5rem 0;
+    background: $background;
+    box-shadow: $shadow_06dp;
+    border-radius: 0.4rem;
+    z-index: 2;
+    .scroll_scrollBody {
+        max-height: 18rem;
+    }
+}
+
+.projectList_selectProjectItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.2rem;
+    font: $fs_r_16;
+    cursor: pointer;
+    &:nth-last-of-type(n + 2) {
+        margin-bottom: 0.5rem;
+    }
+    >span {
+        width: 22.8rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding-left: 2rem;
+    }
+    >div {
+        display: flex;
+        align-items: center;
+        margin-right: 1rem;
+        span {
+            width: 12.4rem;
+            color: $neutral_500;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            margin-left: 0.5rem;
+            overflow: hidden;
+        }
+    }
+    .projectList_selectProjectItem__active {
+        color: $primary_600;
+    }
+    &:hover {
+        background: $primary_10;
+    }
+}
+
+
+/* <--------------------------- * SECTION1 * --------------------------- */

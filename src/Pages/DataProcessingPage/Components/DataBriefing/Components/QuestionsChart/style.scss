@@ -1,0 +1,94 @@
+/**
+* @file
+* @date 2022-09-06
+* @author liaoli
+* @lastModify liaoli 2022-09-06
+*/
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+/** Import all the reference constant after this line */
+@use '@datareachable/webpack/Constant/breakPoint.scss' as *;
+@use '@datareachable/webpack/Constant/font.scss' as *;
+@use '@datareachable/webpack/Constant/color.scss' as *;
+
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+/** The demo mixin is ..........*/
+@mixin demo {}
+
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+/* <--------------------------- * SECTION1 * --------------------------- */
+.chart_chartGroup__kite {
+    .chart_chartGroup {
+        list-style: none;
+        width: 13.6rem;
+        padding: 0.8rem 0.4rem;
+        box-shadow: $shadow_regular;
+        background-color: #fff;
+        border-radius: 0.4rem;
+
+        >li {
+            @include c_body_3();
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            padding: 0.4rem 0.8rem;
+            color: $neutral_400;
+            cursor: pointer;
+
+            >div {
+                display: flex;
+                align-items: center;
+
+                >p {
+                    margin-left: 0.6rem;
+                }
+            }
+        }
+
+
+    }
+}
+
+.chart_chartType__notSelect{
+    color: $neutral_300 !important;
+    cursor: not-allowed !important;
+
+    &:hover{
+        background-color: #fff !important;
+    }
+}
+
+.chart_chartType__kite {
+    .chart_chartType {
+        list-style: none;
+        width: 11.3rem;
+        padding: 0.8rem 0.4rem;
+        box-shadow: $shadow_regular;
+        background-color: #fff;
+        border-radius: 0.4rem;
+
+        >li {
+            @include c_body_3();
+            padding: 0.4rem 0.8rem;
+            color: $neutral_400;
+            border-radius: 0.4rem;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $primary_50;
+            }
+        }
+
+
+    }
+}
+
+.chart_selectChartType{
+    color: $primary_600  !important;
+    svg,
+        p {
+            color: $primary_600  !important;
+        }
+}
+
+/* <--------------------------- * SECTION1 * --------------------------- */

@@ -1,0 +1,93 @@
+/**
+* @file
+* @date 2023-02-13
+* @author zhoubin
+* @lastModify zhoubin 2023-02-13
+*/
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+/** Import all the reference constant after this line */
+@use '@datareachable/webpack/Constant/breakPoint.scss' as *;
+@use '@datareachable/webpack/Constant/font.scss' as *;
+@use '@datareachable/webpack/Constant/color.scss' as *;
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+/* <--------------------------- * SECTION1 * --------------------------- */
+.parameterCard_card {
+    padding: 1.6rem;
+    margin-top: 1.6rem;
+    background-color: #fff;
+    border: 0.1rem solid $neutral_200;
+    border-radius: 0.6rem;
+}
+
+.parameterCard_cardTitle {
+    @include c_h_7();
+    color: $neutral_600;
+}
+
+.parameterCard_header {
+    display: flex;
+    align-items: center;
+
+    span {
+        @include c_label_1();
+        width: 5.3rem;
+        height: 2rem;
+        margin-left: 1.2rem;
+        text-align: center;
+        color: $neutral_400;
+        border: 0.1rem solid $neutral_400;
+        border-radius: 2rem;
+    }
+}
+
+.parameterCard_item {
+    display: flex;
+    align-items: flex-start;
+    margin: 1.6rem 0;
+}
+
+.parameterCard_title {
+    @include c_body_3();
+    flex-shrink: 0;
+    width: 8.4rem;
+    color: $neutral_600;
+}
+
+.parameterCard_desc {
+    @include c_body_3();
+    color: $neutral_400;
+}
+
+.parameterCard_row,
+.parameterCard_col {
+    @include c_h_7();
+    color: $display_font;
+}
+
+.parameterCard_card {
+    .parameterCard_desc {
+        flex: 1;
+    }
+
+    .dropDownListsV2_wrap {
+        width: 100%;
+    }
+
+    .dropDownListsV2_container {
+        flex: 1;
+    }
+}
+
+.parameterCard_error {
+    border-color: $danger_600 !important;
+}
+
+.textAreaV2_textarea::placeholder {
+    color: $neutral_300;
+}
+.parameterCard_error {
+    border-color: $danger_600 !important;
+}
+/* <--------------------------- * SECTION1 * --------------------------- */

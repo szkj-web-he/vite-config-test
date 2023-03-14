@@ -1,0 +1,102 @@
+/**
+* @file
+* @date 2022-11-10
+* @author liaoli
+* @lastModify liaoli 2022-11-10
+*/
+/* <------------------------------------ **** CONSTANT IMPORT START **** ------------------------------------ */
+/** Import all the reference constant after this line */
+@use '@datareachable/webpack/Constant/breakPoint.scss' as *;
+@use '@datareachable/webpack/Constant/font.scss' as *;
+@use '@datareachable/webpack/Constant/color.scss' as *;
+
+/* <------------------------------------ **** CONSTANT IMPORT END **** ------------------------------------ */
+/* <------------------------------------ **** SECTION1 MIXIN START **** ------------------------------------ */
+/** The demo mixin is ..........*/
+@mixin demo {}
+
+/* <------------------------------------ **** SECTION1 MIXIN END **** ------------------------------------ */
+/* <--------------------------- * SECTION1 * --------------------------- */
+.stageList_container {
+    padding-left: 4.8rem;
+    padding-right: 2.4rem;
+    margin-bottom: 2rem;
+}
+
+.stageList_itemHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.4rem;
+
+    >div {
+        display: flex;
+        align-items: center;
+
+        >.icon_wrap {
+            font-size: 1.2rem;
+            transform: rotate(-90deg);
+            transition: .2s all ease;
+        }
+
+        >h2 {
+            @include c_h_7();
+            margin: 0 0.8rem;
+            color: $neutral_500;
+        }
+
+        >span {
+            @include c-label_1();
+            width: 6.5rem;
+            height: 1.8rem;
+            text-align: center;
+            color: $neutral_300;
+            background-color: $neutral_100;
+            border-radius: 2.4rem;
+        }
+    }
+
+    >.icon_wrap {
+        font-size: 1.6rem;
+    }
+}
+
+.stageList_stepContainer {
+    margin-top: 2.4rem;
+}
+
+.stageList_step {
+    padding: 0 1.6rem;
+    margin-bottom: 1.2rem;
+    border: 0.1rem solid $neutral_200 ;
+    border-radius: 0.6rem;
+}
+
+.stageList_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.4rem;
+    color: $neutral_500;
+
+    p {
+        @include c_h_7();
+    }
+
+    .icon_wrap {
+        font-size: 1.2rem;
+        transform: rotate(-90deg);
+        transition: .2s all ease;
+    }
+}
+
+.stageList_countContent {
+    border-top: 0.1rem solid $neutral_200;
+    padding: 1.2rem 0;
+}
+
+.stageList_setVar {
+    background-color: $primary_50 !important;
+    color: $primary_600 !important;
+}
+/* <--------------------------- * SECTION1 * --------------------------- */
